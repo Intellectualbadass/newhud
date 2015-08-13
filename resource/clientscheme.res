@@ -20,12 +20,12 @@ Scheme
     {
         //hud colors
         "Ammo In Clip"                          "235 226 202 255"
-        "Ammo In Reserve"                       "117 107 94 255"
+        "Ammo In Reserve"                       "130 119 104 255"
         "Ammo In Clip Low"                      "192 56 63 255"
         "Ammo In Reserve Low"                   "192 56 63 255"
         
         //The two is for the flicker for buff/hurt. Make the two you choose be close in color.
-        "Health Normal"                         "117 107 94 255"
+        "Health Normal"                         "130 119 104 255"
         "Health Buff"                           "92 128 166 255"
         "Health Buff2"                          "92 128 166 255"
         "Health Hurt"                           "192 56 63 255"
@@ -39,6 +39,8 @@ Scheme
         "Damage Numbers"                        "255 220 100 255"
         "DamageAccount"                         "255 220 100 45"
         "DamageAccountBG"                       "0 0 0 35"
+        //end hud colors
+        
         // base colors
         "Orange"            "178 82 22 255"
         "OrangeDim"         "178 82 22 120"
@@ -101,6 +103,7 @@ Scheme
         
         "TanDark"               "117 107 94 255"
         "TanLight"              "235 226 202 255"
+        "TanMedium"             "130 119 104 255"
         "TanDarker"             "46 43 42 255"
         
         "StoreDarkTan"          "131 121 104 255"
@@ -1472,7 +1475,21 @@ Scheme
                 "additive"  "0"
                 "antialias" "1"
             }
-        }    
+        }  
+        "HudFontMediumBigBoldScanlines"
+        {
+            "1"
+            {
+                "name"      "TF2 Build"
+                "tall"      "30"
+                "weight"    "500"
+                "additive"  "0"
+                "antialias" "1"
+                "blur"      "3"
+                "scanlines" "3"
+            }
+        }  
+  
         "HudFontMediumBigBoldBlur"
         {
             "1"
@@ -1618,6 +1635,20 @@ Scheme
                 "antialias" "1"
             }
         }
+        "HudFontSmallBoldScanlines"
+        {
+            "1"
+            {
+                "name"      "TF2 Build"
+                "tall"      "14"
+                "weight"    "500"
+                "additive"  "0"
+                "antialias" "1"
+                "blur"      "3"
+                "scanlines" "3"
+            }
+        }
+
         "HudFontSmallBoldShadow"
         {
             "1"

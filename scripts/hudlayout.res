@@ -359,7 +359,6 @@
             "controlName"       "ceXLabel"
             "fieldName"         "CODxhairLeftTop"
             "visible"           "1"
-            "visible_minmode"   "1"
             "enabled"           "1"
             "zpos"              "1"
             "font"              "CODHitmarker"
@@ -376,7 +375,6 @@
             "controlName"       "ceXLabel"
             "fieldName"         "CODxhairLeftBottom"
             "visible"           "1"
-            "visible_minmode"   "1"
             "enabled"           "1"
             "zpos"              "1"
             "font"              "CODHitmarker"
@@ -393,7 +391,6 @@
             "controlName"       "ceXLabel"
             "fieldName"         "CODxhairRightTop"
             "visible"           "1"
-            "visible_minmode"   "1"
             "enabled"           "1"
             "zpos"              "1"
             "font"              "CODHitmarker"
@@ -410,7 +407,6 @@
             "controlName"       "ceXLabel"
             "fieldName"         "CODxhairRightBottom"
             "visible"           "1"
-            "visible_minmode"   "1"
             "enabled"           "1"
             "zpos"              "1"
             "font"              "CODHitmarker"
@@ -419,7 +415,21 @@
         }
     }
     //                      * End of custom crosshairs section *
-
+    "TransparentViewmodelMask"
+    {
+        //alpha doesn't work for this, you need to change the texture's alpha
+        "ControlName"   "ImagePanel"
+        "fieldName" "TransparentViewmodelMask"
+        "xpos"  "0"
+        "ypos"  "0"
+        "zpos"  "-100"
+        "wide"  "f0"
+        "tall"  "480"
+        "visible"   "1"
+        "enabled"   "1"
+        "image" "replay/thumbnails/REFRACTnormal_transparent"
+        "scaleImage"    "1"
+    }
     HudPlayerStatus
     {
         "fieldName" "HudPlayerStatus"
@@ -464,10 +474,8 @@
         "tall"  "160"
         
         "blue_active_xpos"          "16"
-        "blue_active_xpos_minmode"  "55"
     
         "red_active_xpos"           "106"
-        "red_active_xpos_minmode"   "105"
     }   
 
     HudItemEffectMeter
@@ -476,9 +484,7 @@
         "visible"       "1"
         "enabled"       "1"
         "xpos"          "r162"  [$WIN32]
-        "xpos_minmode"  "r52"   [$WIN32]
         "ypos"          "r52"   [$WIN32]
-        "ypos_minmode"  "r50"   [$WIN32]
         "xpos"          "r194"  [$X360]
         "ypos"          "r74"   [$X360]
         "wide"          "100"
@@ -504,14 +510,11 @@
         "visible"       "1"
         "enabled"       "1"
         "xpos"          "r80"   [$WIN32]
-        "xpos_minmode"  "r52"   [$WIN32]
         "ypos"          "r21"   [$WIN32]
-        "ypos_minmode"  "r40"   [$WIN32]
         "xpos"          "r112"  [$X360]
         "ypos"          "r45"   [$X360]
         "zpos"          "1"         // draw in front of ammo
         "wide"          "60"
-        "wide_minmode"  "50"
         "tall"          "8"
         "MeterFG"       "White"
         "MeterBG"       "Gray"
@@ -523,14 +526,11 @@
         "visible"       "1"
         "enabled"       "1"
         "xpos"          "r80"   [$WIN32]
-        "xpos_minmode"  "r52"   [$WIN32]
         "ypos"          "r21"   [$WIN32]
-        "ypos_minmode"  "r40"   [$WIN32]
         "xpos"          "r112"  [$X360]
         "ypos"          "r45"   [$X360]
         "zpos"          "1"         // draw in front of ammo
         "wide"          "60"
-        "wide_minmode"  "50"
         "tall"          "8"
         "MeterFG"       "White"
         "MeterBG"       "Gray"
@@ -542,14 +542,11 @@
         "visible"       "1"
         "enabled"       "1"
         "xpos"          "r80"   [$WIN32]
-        "xpos_minmode"  "r52"   [$WIN32]
         "ypos"          "r21"   [$WIN32]
-        "ypos_minmode"  "r40"   [$WIN32]
         "xpos"          "r112"  [$X360]
         "ypos"          "r45"   [$X360]
         "zpos"          "1"         // draw in front of ammo
         "wide"          "60"
-        "wide_minmode"  "50"
         "tall"          "8"
         "MeterFG"       "White"
         "MeterBG"       "Gray"
@@ -613,7 +610,6 @@
         "fieldName"             "CHudAccountPanel"
         "xpos"                  "r162"  [$WIN32]
         "ypos"                  "r152"  [$WIN32]
-        "ypos_minmode"          "r134"  [$WIN32]
         "xpos"                  "r194"  [$X360]
         "ypos"                  "r174"  [$X360]
         "wide"                  "116"
@@ -702,7 +698,7 @@
         "visible"   "0"
         "enabled"   "1"
         "xpos"      "c-126"
-        "ypos"      "c150"
+        "ypos"      "c135"
         "wide"      "252"
         "tall"      "32"
         "priority"  "35"
@@ -1434,9 +1430,7 @@
         "visible"       "1"
         "enabled"       "1"
         "xpos"          "r162"  [$WIN32]
-        "xpos_minmode"  "r110"  [$WIN32]
         "ypos"          "r52"   [$WIN32]
-        "ypos_minmode"  "r30"   [$WIN32]
         "xpos"          "r194"  [$X360]
         "ypos"          "r74"   [$X360]
         "wide"          "100"
@@ -1549,7 +1543,6 @@
         "enabled"               "1"
         "xpos"                  "c-160"
         "ypos"                  "5"
-        "ypos_minmode"              "15"
         "ypos_lodef"                "75"
         "wide"                  "125"
         "tall"                  "55"

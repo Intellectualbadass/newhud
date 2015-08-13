@@ -65,7 +65,6 @@
         "ControlName"   "CExLabel"
         "fieldName"     "PlayerStatusHealthValue"
         "xpos"          "66"
-        "xpos_minmode"  "61"
         "ypos"          "52"    [$WIN32]
         "ypos"          "55"    [$X360]
         "zpos"          "5"
@@ -77,7 +76,25 @@
         "textAlignment" "center"    
         "font"          "HudFontMediumBigBold"
         "fgcolor"       "Health Normal"
-    }     
+    }  
+    "PlayerStatusHealthValueScanlines"
+    {
+        "ControlName"   "CExLabel"
+        "fieldName"     "PlayerStatusHealthValueScanlines"
+        "xpos"          "66"
+        "ypos"          "52"    [$WIN32]
+        "ypos"          "55"    [$X360]
+        "zpos"          "5"
+        "wide"          "70"
+        "tall"          "24"
+        "visible"       "1"
+        "enabled"       "1"
+        "labelText"     "%Health%"
+        "textAlignment" "center"    
+        "font"          "HudFontMediumBigBoldScanlines"
+        "fgcolor"       "0 0 0 0"
+    }  
+   
 
 
 //noid's layering shit LET'S GO

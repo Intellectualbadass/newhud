@@ -213,12 +213,10 @@ event HudHealthBonusPulse
     Animate PlayerStatusHealthValueSpectator     FgColor     "Health Buff"       Linear 0.0 0.1
     Animate PlayerStatusHealthValueSpectator     FgColor     "Health Buff2"          Linear 0.3 0.4
     Animate PlayerStatusHealthValueTargetID      FgColor     "Health Buff"       Linear 0.0 0.1
-    Animate PlayerStatusHealthValueTargetID      FgColor     "Health Buff2"          Linear 0.3 0.4
-    
+    Animate PlayerStatusHealthValueTargetID      FgColor     "Health Buff2"          Linear 0.3 0.      
 
     RunEvent HudHealthBonusPulseLoop    0.6
 }
-
 // call to loop HudHealthBonusPulse
 event HudHealthBonusPulseLoop
 {
@@ -469,6 +467,12 @@ event UberchargeBg
     Animate UberchargeReady FgColor     "Heal Numbers"        Linear 0.2 0.2
     Animate UberchargeReady FgColor     "Uber Bar Color"       Linear 0.5 0.2
     Animate UberchargeReady Alpha       "0"             Linear 0.7 0.2
+    
+    Animate ChargeLabelScanlines Alpha       "255"           Linear 0.0 0.2
+    Animate ChargeLabelScanlines FgColor     "Heal Numbers"        Linear 0.2 0.2
+    Animate ChargeLabelScanlines FgColor     "Uber Bar Color"       Linear 0.5 0.2
+    Animate ChargeLabelScanlines Alpha       "0"             Linear 0.7 0.2
+
 }
 
 event HudMedicChargedBlink
