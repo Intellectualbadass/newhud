@@ -12,7 +12,8 @@
         "tall_minmode"  "16"
         "visible"       "1"
         "enabled"       "1"
-        "scaleImage"    "1" 
+        "scaleImage"    "1"
+        "alpha"         "0" 
     }       
     "PlayerStatusHealthImageBG"
     {
@@ -39,7 +40,7 @@
         "tall"          "24"
         "visible"       "1"
         "enabled"       "1"
-        "fillcolor"     "58 55 54 255"
+        "fillcolor"     "58 55 54 0"
         "scaleImage"    "1" 
     }
     "BuildingStatusHealthImageBG"
@@ -56,11 +57,11 @@
     {
         "ControlName"           "ImagePanel"
         "fieldName"             "PlayerStatusHealthBonusImage"
-        "xpos"                  "0"
-        "ypos"                  "1"
+        "xpos"                  "9999"
+        "ypos"                  "9999"
         "zpos"                  "6"
-        "wide"                  "96"
-        "tall"                  "12"
+        "wide"                  "0"
+        "tall"                  "0"
         "visible"               "0"
         "enabled"               "1"
         "image"                 "../hud/health_over_bg"
@@ -70,13 +71,11 @@
     {
         "ControlName"   "Label"
         "fieldName"     "PlayerStatusHealthValueTargetID"
-        "xpos"          "-2"
+        "xpos"          "0"
         "ypos"          "10"
-        "ypos_minmode"  "6"
         "zpos"          "20"
         "wide"          "28"
         "tall"          "22"
-        "tall_minmode"  "23"
         "visible"       "1"
         "enabled"       "1"
         "textAlignment" "center"    
@@ -84,12 +83,30 @@
         "font"              "HudFontSmallBold"  
         "fgcolor_override"  "Health Normal"
     }
+    "PlayerStatusHealthValueTargetIDHuge"
+    {
+        "ControlName"   "Label"
+        "fieldName"     "PlayerStatusHealthValueTargetIDHuge"
+        "xpos"          "-4"
+        "ypos"          "10"
+        "zpos"          "20"
+        "wide"          "35"
+        "tall"          "22"
+        "visible"       "1"
+        "enabled"       "1"
+        "textAlignment" "center"    
+        "labeltext"     "%Health%"
+        "font"              "HudFontMediumSmallBold"  
+        "fgcolor_override"  "255 255 0 0"
+    }
+
+
     //layers
     "PlayerStatusHealthValueTargetIDBlur"
     {
         "ControlName"   "Label"
         "fieldName"     "PlayerStatusHealthValueTargetIDBlur"
-        "xpos"          "-2"
+        "xpos"          "0"
         "ypos"          "10"
         "ypos_minmode"  "6"
         "zpos"          "20"
@@ -108,7 +125,7 @@
     {
         "ControlName"   "Label"
         "fieldName"     "PlayerStatusHealthValueTargetIDBlurU"
-        "xpos"          "-2"
+        "xpos"          "0"
         "ypos"          "9"
         "ypos_minmode"  "6"
         "zpos"          "20"
@@ -127,7 +144,7 @@
     {
         "ControlName"   "Label"
         "fieldName"     "PlayerStatusHealthValueTargetIDBlurD"
-        "xpos"          "-2"
+        "xpos"          "0"
         "ypos"          "11"
         "ypos_minmode"  "6"
         "zpos"          "20"
@@ -146,7 +163,7 @@
     {
         "ControlName"   "Label"
         "fieldName"     "PlayerStatusHealthValueTargetIDBlurL"
-        "xpos"          "-3"
+        "xpos"          "-1"
         "ypos"          "10"
         "ypos_minmode"  "6"
         "zpos"          "20"
@@ -165,7 +182,7 @@
     {
         "ControlName"   "Label"
         "fieldName"     "PlayerStatusHealthValueTargetIDBlurR"
-        "xpos"          "-1"
+        "xpos"          "1"
         "ypos"          "10"
         "ypos_minmode"  "6"
         "zpos"          "20"
@@ -184,7 +201,7 @@
     {
         "ControlName"   "Label"
         "fieldName"     "PlayerStatusHealthValueTargetIDBlurUL"
-        "xpos"          "-3"
+        "xpos"          "-1"
         "ypos"          "9"
         "ypos_minmode"  "6"
         "zpos"          "20"
@@ -203,7 +220,7 @@
     {
         "ControlName"   "Label"
         "fieldName"     "PlayerStatusHealthValueTargetIDBlurUR"
-        "xpos"          "-1"
+        "xpos"          "1"
         "ypos"          "9"
         "ypos_minmode"  "6"
         "zpos"          "20"
@@ -222,7 +239,7 @@
     {
         "ControlName"   "Label"
         "fieldName"     "PlayerStatusHealthValueTargetIDBlurDL"
-        "xpos"          "-3"
+        "xpos"          "-1"
         "ypos"          "11"
         "ypos_minmode"  "6"
         "zpos"          "20"
@@ -241,7 +258,7 @@
     {
         "ControlName"   "Label"
         "fieldName"     "PlayerStatusHealthValueTargetIDBlurDR"
-        "xpos"          "-1"
+        "xpos"          "1"
         "ypos"          "11"
         "ypos_minmode"  "6"
         "zpos"          "20"

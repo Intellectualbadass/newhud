@@ -40,10 +40,10 @@
     {
         "ControlName"   "CExLabel"
         "fieldName"     "AmmoInClip"
-        "font"          "HudFontMediumBigBold"
+        "font"          "HudFontBiggerBold"
         "fgcolor"       "Ammo In Clip"
-        "xpos"          "-16"
-        "ypos"          "40"
+        "xpos"          "40"
+        "ypos"          "27"
         "zpos"          "6"
         "wide"          "55"
         "tall"          "50"
@@ -52,17 +52,15 @@
         "textAlignment" "east"   
         "labelText"     "%Ammo%"
         
-    } 
-
-//layers    
+    }   
     "AmmoInClipShadow"
     {
         "ControlName"   "CExLabel"
         "fieldName"     "AmmoInClipShadow"
-        "font"          "HudFontMediumBigBoldBlur"
+        "font"          "HudFontBiggerBoldBlur"
         "fgcolor"       "Black"
-        "xpos"          "-16"
-        "ypos"          "40"
+        "xpos"          "40"
+        "ypos"          "27"
         "zpos"          "6"
         "wide"          "55"
         "tall"          "50"
@@ -72,17 +70,14 @@
         "labelText"     "%Ammo%"
         
     }
-
-
-//end layers    
     "AmmoInReserve"
     {
         "ControlName"   "CExLabel"
         "fieldName"     "AmmoInReserve"
         "font"          "HudFontMediumSmallBold"
         "fgcolor"       "Ammo In Reserve"
-        "xpos"          "44"
-        "ypos"          "44"
+        "xpos"          "100"
+        "ypos"          "32"
         "zpos"          "7"
         "wide"          "40"
         "tall"          "30"
@@ -97,8 +92,8 @@
         "fieldName"     "AmmoInReserveShadow"
         "font"          "HudFontMediumSmallBoldBlur"
         "fgcolor_override"  "Black"
-        "xpos"          "44"
-        "ypos"          "44"
+        "xpos"          "100"
+        "ypos"          "32"
         "zpos"          "7"
         "wide"          "40"
         "tall"          "30"
@@ -111,12 +106,12 @@
     {
         "ControlName"   "CExLabel"
         "fieldName"     "AmmoNoClip"
-        "font"          "HudFontMediumBigBold"
+        "font"          "HudFontBiggerBold"
         "fgcolor"       "Ammo In Clip"
-        "xpos"          "4"
-        "ypos"          "40"
+        "xpos"          "48"
+        "ypos"          "27"
         "zpos"          "6"
-        "wide"          "60"
+        "wide"          "80"
         "tall"          "50"
         "visible"       "0"
         "enabled"       "1"
@@ -128,17 +123,17 @@
     {
         "ControlName"   "CExLabel"
         "fieldName"     "AmmoNoClipShadow"
-        "font"          "HudFontMediumBigBoldBlur"
+        "font"          "HudFontBiggerBoldBlur"
         "fgcolor"       "Black"
-        "xpos"          "4"
-        "ypos"          "40"
+        "xpos"          "48"
+        "ypos"          "27"
         "zpos"          "6"
-        "wide"          "60"
+        "wide"          "80"
         "tall"          "50"
         "visible"       "0"
         "enabled"       "1"
         "textAlignment" "center"          
         "labelText"     "%Ammo%"
         
-    }                                   
+    }   
 }

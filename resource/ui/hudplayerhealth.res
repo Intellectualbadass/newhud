@@ -20,13 +20,13 @@
     {
         "ControlName"   "ImagePanel"
         "fieldName"     "PlayerStatusHealthImage"
-        "xpos"          "64"
-        "ypos"          "28"
+        "xpos"          "9999"
+        "ypos"          "9999"
         "zpos"          "4"
         "wide"          "72"
         "tall"          "72"
-        "visible"       "1"
-        "enabled"       "1"
+        "visible"       "0"
+        "enabled"       "0"
         "scaleImage"    "1" 
         "image"         "replay/thumbnails/health_bg"
         "alpha"         "255"
@@ -36,13 +36,13 @@
     {
         "ControlName"   "ImagePanel"
         "fieldName"     "PlayerStatusHealthImageBG"
-        "xpos"          "61"
-        "ypos"          "25"
+        "xpos"          "9999"
+        "ypos"          "9999"
         "zpos"          "3"
         "wide"          "78"
         "tall"          "78"
-        "visible"       "1"
-        "enabled"       "1"
+        "visible"       "0"
+        "enabled"       "0"
         "image"         "replay/thumbnails/health_bg"
         "scaleImage"    "1" 
     }   
@@ -50,8 +50,8 @@
     {
         "ControlName"   "ImagePanel"
         "fieldName"     "PlayerStatusHealthBonusImage"
-        "xpos"          "61"  [$WIN32]
-        "ypos"          "25"  [$WIN32]
+        "xpos"          "53"  [$WIN32]
+        "ypos"          "13"  [$WIN32]
         "zpos"          "2"
         "wide"          "78" [$WIN32]
         "tall"          "78" [$WIN32]
@@ -64,36 +64,118 @@
     {
         "ControlName"   "CExLabel"
         "fieldName"     "PlayerStatusHealthValue"
-        "xpos"          "66"
-        "ypos"          "52"    [$WIN32]
-        "ypos"          "55"    [$X360]
+        "xpos"          "56"
+        "ypos"          "32"    [$WIN32]
         "zpos"          "5"
         "wide"          "70"
-        "tall"          "24"
+        "tall"          "40"
         "visible"       "1"
         "enabled"       "1"
         "labelText"     "%Health%"
         "textAlignment" "center"    
-        "font"          "HudFontMediumBigBold"
+        "font"          "HudFontBiggerBold"
         "fgcolor"       "Health Normal"
     }  
-    "PlayerStatusHealthValueScanlines"
+    "PlayerStatusHealthValueHuge"
     {
         "ControlName"   "CExLabel"
-        "fieldName"     "PlayerStatusHealthValueScanlines"
-        "xpos"          "66"
-        "ypos"          "52"    [$WIN32]
-        "ypos"          "55"    [$X360]
+        "fieldName"     "PlayerStatusHealthValueHuge"
+        "xpos"          "46"
+        "ypos"          "22"    [$WIN32]
         "zpos"          "5"
-        "wide"          "70"
-        "tall"          "24"
+        "wide"          "90"
+        "tall"          "60"
         "visible"       "1"
         "enabled"       "1"
         "labelText"     "%Health%"
         "textAlignment" "center"    
-        "font"          "HudFontMediumBigBoldScanlines"
+        "font"          "HudFontHugeBold"
         "fgcolor"       "0 0 0 0"
     }  
+    "PlayerStatusHealthValueHugeScanlines"
+    {
+        "ControlName"   "CExLabel"
+        "fieldName"     "PlayerStatusHealthValueHugeScanlines"
+        "xpos"          "46"
+        "ypos"          "22"    [$WIN32]
+        "zpos"          "5"
+        "wide"          "90"
+        "tall"          "60"
+        "visible"       "1"
+        "enabled"       "1"
+        "labelText"     "%Health%"
+        "textAlignment" "center"    
+        "font"          "HudFontHugeBoldBlurScanlines"
+        "fgcolor"       "0 0 0 0"
+    }  
+    "PlayerStatusHealthValueHugeScanlinesUL"
+    {
+        "ControlName"   "CExLabel"
+        "fieldName"     "PlayerStatusHealthValueHugeScanlinesUL"
+        "xpos"          "43"
+        "ypos"          "19"    [$WIN32]
+        "zpos"          "5"
+        "wide"          "90"
+        "tall"          "60"
+        "visible"       "1"
+        "enabled"       "1"
+        "labelText"     "%Health%"
+        "textAlignment" "center"    
+        "font"          "HudFontHugeBoldBlurScanlines"
+        "fgcolor"       "0 0 0 0"
+    } 
+    "PlayerStatusHealthValueHugeScanlinesUR"
+    {
+        "ControlName"   "CExLabel"
+        "fieldName"     "PlayerStatusHealthValueHugeScanlinesUR"
+        "xpos"          "49"
+        "ypos"          "19"    [$WIN32]
+        "zpos"          "5"
+        "wide"          "90"
+        "tall"          "60"
+        "visible"       "1"
+        "enabled"       "1"
+        "labelText"     "%Health%"
+        "textAlignment" "center"    
+        "font"          "HudFontHugeBoldBlurScanlines"
+        "fgcolor"       "0 0 0 0"
+    }
+    "PlayerStatusHealthValueHugeScanlinesDL"
+    {
+        "ControlName"   "CExLabel"
+        "fieldName"     "PlayerStatusHealthValueHugeScanlinesDL"
+        "xpos"          "43"
+        "ypos"          "25"    [$WIN32]
+        "zpos"          "5"
+        "wide"          "90"
+        "tall"          "60"
+        "visible"       "1"
+        "enabled"       "1"
+        "labelText"     "%Health%"
+        "textAlignment" "center"    
+        "font"          "HudFontHugeBoldBlurScanlines"
+        "fgcolor"       "0 0 0 0"
+    } 
+    "PlayerStatusHealthValueHugeScanlinesDR"
+    {
+        "ControlName"   "CExLabel"
+        "fieldName"     "PlayerStatusHealthValueHugeScanlinesDR"
+        "xpos"          "49"
+        "ypos"          "25"    [$WIN32]
+        "zpos"          "5"
+        "wide"          "90"
+        "tall"          "60"
+        "visible"       "1"
+        "enabled"       "1"
+        "labelText"     "%Health%"
+        "textAlignment" "center"    
+        "font"          "HudFontHugeBoldBlurScanlines"
+        "fgcolor"       "0 0 0 0"
+    } 
+
+ 
+
+
    
 
 
@@ -102,54 +184,48 @@
     {
         "ControlName"   "CExLabel"
         "fieldName"     "PlayerStatusHealthValueBlur"
-        "xpos"          "66"
-        "xpos_minmode"  "61"
-        "ypos"          "52"    [$WIN32]
-        "ypos"          "55"    [$X360]
+        "xpos"          "56"
+        "ypos"          "32"    [$WIN32]
         "zpos"          "5"
         "wide"          "70"
-        "tall"          "24"
+        "tall"          "40"
         "visible"       "1"
         "enabled"       "1"
         "labelText"     "%Health%"
         "textAlignment" "center"    
-        "font"                  "HudFontMediumBigBoldBlur"
+        "font"                  "HudFontBiggerBoldBlur"
         "fgcolor_override"      "Black"
     }
      "PlayerStatusHealthValueBlurU"
     {
         "ControlName"   "CExLabel"
         "fieldName"     "PlayerStatusHealthValueBlurU"
-        "xpos"          "66"
-        "xpos_minmode"  "61"
-        "ypos"          "51"    [$WIN32]
-        "ypos"          "54"    [$X360]
+        "xpos"          "56"
+        "ypos"          "31"    [$WIN32]
         "zpos"          "5"
         "wide"          "70"
-        "tall"          "24"
+        "tall"          "40"
         "visible"       "1"
         "enabled"       "1"
         "labelText"     "%Health%"
         "textAlignment" "center"    
-        "font"                  "HudFontMediumBigBoldBlur"
+        "font"                  "HudFontBiggerBoldBlur"
         "fgcolor_override"      "Black"
     }      
      "PlayerStatusHealthValueBlurD"
     {
         "ControlName"   "CExLabel"
         "fieldName"     "PlayerStatusHealthValueBlurD"
-        "xpos"          "66"
-        "xpos_minmode"  "61"
-        "ypos"          "53"    [$WIN32]
-        "ypos"          "56"    [$X360]
+        "xpos"          "56"
+        "ypos"          "33"    [$WIN32]
         "zpos"          "5"
         "wide"          "70"
-        "tall"          "24"
+        "tall"          "40"
         "visible"       "1"
         "enabled"       "1"
         "labelText"     "%Health%"
         "textAlignment" "center"    
-        "font"                  "HudFontMediumBigBoldBlur"
+        "font"                  "HudFontBiggerBoldBlur"
         "fgcolor_override"      "Black"
     }   
  
@@ -157,108 +233,96 @@
     {
         "ControlName"   "CExLabel"
         "fieldName"     "PlayerStatusHealthValueBlurL"
-        "xpos"          "65"
-        "xpos_minmode"  "61"
-        "ypos"          "52"    [$WIN32]
-        "ypos"          "56"    [$X360]
+        "xpos"          "55"
+        "ypos"          "32"    [$WIN32]
         "zpos"          "5"
         "wide"          "70"
-        "tall"          "24"
+        "tall"          "40"
         "visible"       "1"
         "enabled"       "1"
         "labelText"     "%Health%"
         "textAlignment" "center"    
-        "font"                  "HudFontMediumBigBoldBlur"
+        "font"                  "HudFontBiggerBoldBlur"
         "fgcolor_override"      "Black"
     }   
         "PlayerStatusHealthValueBlurR"
     {
         "ControlName"   "CExLabel"
         "fieldName"     "PlayerStatusHealthValueBlurR"
-        "xpos"          "67"
-        "xpos_minmode"  "61"
-        "ypos"          "52"    [$WIN32]
-        "ypos"          "56"    [$X360]
+        "xpos"          "57"
+        "ypos"          "32"    [$WIN32]
         "zpos"          "5"
         "wide"          "70"
-        "tall"          "24"
+        "tall"          "40"
         "visible"       "1"
         "enabled"       "1"
         "labelText"     "%Health%"
         "textAlignment" "center"    
-        "font"                  "HudFontMediumBigBoldBlur"
+        "font"                  "HudFontBiggerBoldBlur"
         "fgcolor_override"      "Black"
     }   
         "PlayerStatusHealthValueBlurUL"
     {
         "ControlName"   "CExLabel"
         "fieldName"     "PlayerStatusHealthValueBlur"
-        "xpos"          "65"
-        "xpos_minmode"  "61"
-        "ypos"          "51"    [$WIN32]
-        "ypos"          "54"    [$X360]
+        "xpos"          "55"
+        "ypos"          "31"    [$WIN32]
         "zpos"          "5"
         "wide"          "70"
-        "tall"          "24"
+        "tall"          "40"
         "visible"       "1"
         "enabled"       "1"
         "labelText"     "%Health%"
         "textAlignment" "center"    
-        "font"                  "HudFontMediumBigBoldBlur"
+        "font"                  "HudFontBiggerBoldBlur"
         "fgcolor_override"      "Black"
     }
         "PlayerStatusHealthValueBlurUR"
     {
         "ControlName"   "CExLabel"
         "fieldName"     "PlayerStatusHealthValueBlurUR"
-        "xpos"          "67"
-        "xpos_minmode"  "61"
-        "ypos"          "51"    [$WIN32]
-        "ypos"          "54"    [$X360]
+        "xpos"          "57"
+        "ypos"          "31"    [$WIN32]
         "zpos"          "5"
         "wide"          "70"
-        "tall"          "24"
+        "tall"          "40"
         "visible"       "1"
         "enabled"       "1"
         "labelText"     "%Health%"
         "textAlignment" "center"    
-        "font"                  "HudFontMediumBigBoldBlur"
+        "font"                  "HudFontBiggerBoldBlur"
         "fgcolor_override"      "Black"
     }
     "PlayerStatusHealthValueBlurDL"
     {
         "ControlName"   "CExLabel"
         "fieldName"     "PlayerStatusHealthValueBlurDL"
-        "xpos"          "65"
-        "xpos_minmode"  "61"
-        "ypos"          "53"    [$WIN32]
-        "ypos"          "54"    [$X360]
+        "xpos"          "55"
+        "ypos"          "33"    [$WIN32]
         "zpos"          "5"
         "wide"          "70"
-        "tall"          "24"
+        "tall"          "40"
         "visible"       "1"
         "enabled"       "1"
         "labelText"     "%Health%"
         "textAlignment" "center"    
-        "font"                  "HudFontMediumBigBoldBlur"
+        "font"                  "HudFontBiggerBoldBlur"
         "fgcolor_override"      "Black"
     }
     "PlayerStatusHealthValueBlurDR"
     {
         "ControlName"   "CExLabel"
         "fieldName"     "PlayerStatusHealthValueBlurDR"
-        "xpos"          "67"
-        "xpos_minmode"  "61"
-        "ypos"          "53"    [$WIN32]
-        "ypos"          "54"    [$X360]
+        "xpos"          "57"
+        "ypos"          "33"    [$WIN32]
         "zpos"          "5"
         "wide"          "70"
-        "tall"          "24"
+        "tall"          "40"
         "visible"       "1"
         "enabled"       "1"
         "labelText"     "%Health%"
         "textAlignment" "center"    
-        "font"                  "HudFontMediumBigBoldBlur"
+        "font"                  "HudFontBiggerBoldBlur"
         "fgcolor_override"      "Black"
     }
 

@@ -435,8 +435,8 @@
         "fieldName" "HudPlayerStatus"
         "visible" "1"
         "enabled" "1"
-        "xpos"  "0"
-        "ypos"  "0"
+        "xpos"  "-30"
+        "ypos"  "30"
         "wide"  "f0"
         "tall"  "480"
     }
@@ -622,7 +622,7 @@
     CHealthAccountPanel
     {
         "fieldName"             "CHealthAccountPanel"
-        "xpos"                  "c-150"
+        "xpos"                  "c-170"
         "ypos"                  "c50"
         "wide"                  "116"
         "tall"                  "180"
@@ -698,7 +698,7 @@
         "visible"   "0"
         "enabled"   "1"
         "xpos"      "c-126"
-        "ypos"      "c135"
+        "ypos"      "c105"
         "wide"      "252"
         "tall"      "32"
         "priority"  "35"
@@ -879,31 +879,27 @@
         "fieldName" "HudDeathNotice"
         "visible" "1"
         "enabled" "1"
-        "xpos"   "r640" [$WIN32]
-        "ypos"   "12"   [$WIN32]
-        "xpos"   "r672" [$X360]
-        "ypos"   "35"   [$X360]
-        "wide"   "628"
+        "xpos"   "350"  [$WIN32]
+        "ypos"   "385"  [$WIN32]
+        "wide"   "580"
         "tall"   "468"
 
-        "MaxDeathNotices" "6"   //changed
-        "IconScale"   "0.35"
-        "LineHeight"      "16"
-        "LineSpacing"     "4"
-        "CornerRadius"    "3"
-        "RightJustify"    "1"   // If 1, draw notices from the right
+        "MaxDeathNotices" "7"
+        "IconScale"   "0.5"
+        "LineHeight"      "10"
+        "LineSpacing"     "-1"
+        "CornerRadius"    "1"
+        "RightJustify"    "0"   // If 1, draw notices from the right
         
         "TextFont"      "Default"
         
         "TeamBlue"      "HUDBlueTeamSolid"
         "TeamRed"       "HUDRedTeamSolid"
-        "IconColor"     "HudWhite"
+        "IconColor"     "TanLight"
         "LocalPlayerColor"  "HUDBlack"
 
-        "BaseBackgroundColor"   "46 43 42 220"      [$WIN32]
-        "LocalBackgroundColor"  "245 229 196 200"   [$WIN32]
-        "BaseBackgroundColor"   "32 32 32 255"      [$X360]
-        "LocalBackgroundColor"  "0 0 0 255"     [$X360]
+        "BaseBackgroundColor"   "TanDarker"      [$WIN32]
+        "LocalBackgroundColor"  "TanLight"   [$WIN32]
     }
 
     HudVehicle

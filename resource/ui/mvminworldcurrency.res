@@ -51,7 +51,7 @@
         "fieldName"     "CurrencyGood"
         "font"          "HudFontSmallestBold"
         "fgcolor"       "CreditsGreen"
-        "xpos"          "20"
+        "xpos"          "9"
         "ypos"          "1"
         "zpos"          "4"
         "wide"          "40"

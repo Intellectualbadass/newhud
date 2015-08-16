@@ -4,7 +4,7 @@
     {
         "ControlName"       "CTFImagePanel"
         "fieldName"     "TargetIDBG"
-        "xpos"          "24"
+        "xpos"          "0"
         "ypos"          "10"
         "zpos"          "-1"
         "wide"          "252"
@@ -132,9 +132,9 @@
     {
         "ControlName"       "EditablePanel"
         "fieldName"     "SpectatorGUIHealth"
-        "xpos"          "0"
+        "xpos"          "2"
         "ypos"          "0"
-        "wide"          "25"
+        "wide"          "28"
         "tall"          "32"
         "visible"       "0"
         "enabled"       "0" 

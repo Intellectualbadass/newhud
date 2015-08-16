@@ -202,6 +202,7 @@ event KeyHintMessageHide
 //===========================================
 
 //Health Bonus Pulse
+
 event HudHealthBonusPulse
 {
     Animate PlayerStatusHealthBonusImage         Alpha       "255"              Linear 0.0 0.2
@@ -213,7 +214,7 @@ event HudHealthBonusPulse
     Animate PlayerStatusHealthValueSpectator     FgColor     "Health Buff"       Linear 0.0 0.1
     Animate PlayerStatusHealthValueSpectator     FgColor     "Health Buff2"          Linear 0.3 0.4
     Animate PlayerStatusHealthValueTargetID      FgColor     "Health Buff"       Linear 0.0 0.1
-    Animate PlayerStatusHealthValueTargetID      FgColor     "Health Buff2"          Linear 0.3 0.      
+    Animate PlayerStatusHealthValueTargetID      FgColor     "Health Buff2"          Linear 0.3 0.4
 
     RunEvent HudHealthBonusPulseLoop    0.6
 }
@@ -240,10 +241,67 @@ event HudHealthBonusPulseStop
 event HudHealthDyingPulse
 {
     Animate PlayerStatusHealthBonusImage       Alpha       "0"     Linear 0.0 0.002
-    Animate PlayerStatusHealthBonusImage       Alpha       "235"           Linear 0.006 0.30
+    Animate PlayerStatusHealthBonusImage       Alpha       "0"           Linear 0.006 0.30
     
-    Animate PlayerStatusHealthValue            FgColor "Health Hurt" Linear 0.0 0.0
-    Animate PlayerStatusHealthValue            FgColor "Health Hurt2" Linear 0.035 0.0
+    //the default health color and size and blurs disappears when at low health
+    Animate PlayerStatusHealthValue                FgColor "Health Normal" Linear 0.0 0.0
+    Animate PlayerStatusHealthValue                Alpha       "0" Linear 0.0 0.0
+    
+    Animate PlayerStatusHealthValueBlur            FgColor "Black" Linear 0.0 0.0
+    Animate PlayerStatusHealthValueBlur            Alpha       "0" Linear 0.0 0.0
+
+    Animate PlayerStatusHealthValueBlurU           FgColor "Black" Linear 0.0 0.0
+    Animate PlayerStatusHealthValueBlurU           Alpha       "0" Linear 0.0 0.0
+    
+    Animate PlayerStatusHealthValueBlurD           FgColor "Black" Linear 0.0 0.0
+    Animate PlayerStatusHealthValueBlurD           Alpha       "0" Linear 0.0 0.0
+    
+    Animate PlayerStatusHealthValueBlurL           FgColor "Black" Linear 0.0 0.0
+    Animate PlayerStatusHealthValueBlurL           Alpha       "0" Linear 0.0 0.0
+    
+    Animate PlayerStatusHealthValueBlurR           FgColor "Black" Linear 0.0 0.0
+    Animate PlayerStatusHealthValueBlurR           Alpha       "0" Linear 0.0 0.0
+    
+    Animate PlayerStatusHealthValueBlurUL          FgColor "Black" Linear 0.0 0.0
+    Animate PlayerStatusHealthValueBlurUL          Alpha       "0" Linear 0.0 0.0
+    
+    Animate PlayerStatusHealthValueBlurUR          FgColor "Black" Linear 0.0 0.0
+    Animate PlayerStatusHealthValueBlurUR          Alpha       "0" Linear 0.0 0.0
+    
+    Animate PlayerStatusHealthValueBlurDL          FgColor "Black" Linear 0.0 0.0
+    Animate PlayerStatusHealthValueBlurDL          Alpha       "0" Linear 0.0 0.0
+    
+    Animate PlayerStatusHealthValueBlurDR          FgColor "Black" Linear 0.0 0.0
+    Animate PlayerStatusHealthValueBlurDR          Alpha       "0" Linear 0.0 0.0
+    
+    //and are replaced by the huge font and scanlines
+    Animate PlayerStatusHealthValueHuge            FgColor "Health Hurt" Linear 0.0 0.0
+    Animate PlayerStatusHealthValueHuge            Alpha       "255" Linear 0.0 0.0
+    
+    //the scanlines
+    Animate PlayerStatusHealthValueHugeScanlines            FgColor "255 50 0 255" Linear 0.0 0.0
+    Animate PlayerStatusHealthValueHugeScanlines            Alpha       "255" Linear 0.0 0.0
+
+    //which rotate at the corners
+    Animate PlayerStatusHealthValueHugeScanlinesUL            FgColor "255 50 0 255" Linear 0.0 0.0
+    Animate PlayerStatusHealthValueHugeScanlinesUL            Alpha       "255" Linear 0.0 0.0
+    Animate PlayerStatusHealthValueHugeScanlinesUL            FgColor "0 0 0 0" Linear 0.035 0.0
+    Animate PlayerStatusHealthValueHugeScanlinesUL            Alpha       "0" Linear 0.035 0.0
+    
+    Animate PlayerStatusHealthValueHugeScanlinesUR            FgColor "255 50 0 255" Linear 0.035 0.0
+    Animate PlayerStatusHealthValueHugeScanlinesUR            Alpha       "255" Linear 0.035 0.0
+    Animate PlayerStatusHealthValueHugeScanlinesUR            FgColor "0 0 0 0" Linear 0.07 0.0
+    Animate PlayerStatusHealthValueHugeScanlinesUR            Alpha       "0" Linear 0.07 0.0
+
+    Animate PlayerStatusHealthValueHugeScanlinesDR            FgColor "255 50 0 255" Linear 0.07 0.0
+    Animate PlayerStatusHealthValueHugeScanlinesDR            Alpha       "255" Linear 0.07 0.0
+    Animate PlayerStatusHealthValueHugeScanlinesDR            FgColor "0 0 0 0" Linear 0.105 0.0
+    Animate PlayerStatusHealthValueHugeScanlinesDR            Alpha       "0" Linear 0.105 0.0
+    
+    Animate PlayerStatusHealthValueHugeScanlinesDL            FgColor "255 50 0 255" Linear 0.105 0.0
+    Animate PlayerStatusHealthValueHugeScanlinesDL            Alpha       "255" Linear 0.105 0.0
+    Animate PlayerStatusHealthValueHugeScanlinesDL            FgColor "0 0 0 0" Linear 0.140 0.0
+    Animate PlayerStatusHealthValueHugeScanlinesDL            Alpha       "0" Linear 0.140 0.0
 
     Animate PlayerStatusHealthValueSpectator   FgColor "Health Hurt"     Linear 0.0 0.0
     Animate PlayerStatusHealthValueSpectator   FgColor "Health Hurt2"     Linear 0.035 0.0
@@ -264,7 +322,65 @@ event HudHealthDyingPulseStop
     StopEvent HudHealthDyingPulse 0.0
     StopEvent HudHealthDyingPulseLoop 0.0
     
-    Animate PlayerStatusHealthValue            FgColor "Health Normal" Accek 0.0 0.0
+    Animate PlayerStatusHealthValue                FgColor "Health Normal" Linear 0.0 0.0
+    Animate PlayerStatusHealthValue                Alpha       "255" Linear 0.0 0.0
+    
+    Animate PlayerStatusHealthValueBlur            FgColor "Black" Linear 0.0 0.0
+    Animate PlayerStatusHealthValueBlur            Alpha       "255" Linear 0.0 0.0
+
+    Animate PlayerStatusHealthValueBlurU           FgColor "Black" Linear 0.0 0.0
+    Animate PlayerStatusHealthValueBlurU           Alpha       "255" Linear 0.0 0.0
+    
+    Animate PlayerStatusHealthValueBlurD           FgColor "Black" Linear 0.0 0.0
+    Animate PlayerStatusHealthValueBlurD           Alpha       "255" Linear 0.0 0.0
+    
+    Animate PlayerStatusHealthValueBlurL           FgColor "Black" Linear 0.0 0.0
+    Animate PlayerStatusHealthValueBlurL           Alpha       "255" Linear 0.0 0.0
+    
+    Animate PlayerStatusHealthValueBlurR           FgColor "Black" Linear 0.0 0.0
+    Animate PlayerStatusHealthValueBlurR           Alpha       "255" Linear 0.0 0.0
+    
+    Animate PlayerStatusHealthValueBlurUL          FgColor "Black" Linear 0.0 0.0
+    Animate PlayerStatusHealthValueBlurUL          Alpha       "255" Linear 0.0 0.0
+    
+    Animate PlayerStatusHealthValueBlurUR          FgColor "Black" Linear 0.0 0.0
+    Animate PlayerStatusHealthValueBlurUR          Alpha       "255" Linear 0.0 0.0
+    
+    Animate PlayerStatusHealthValueBlurDL          FgColor "Black" Linear 0.0 0.0
+    Animate PlayerStatusHealthValueBlurDL          Alpha       "255" Linear 0.0 0.0
+    
+    Animate PlayerStatusHealthValueBlurDR          FgColor "Black" Linear 0.0 0.0
+    Animate PlayerStatusHealthValueBlurDR          Alpha       "255" Linear 0.0 0.0
+    
+    Animate PlayerStatusHealthValueHuge            FgColor "Health Normal" Linear 0.0 0.0
+    Animate PlayerStatusHealthValueHuge            FgColor "Health Normal" Linear 0.035 0.0
+    Animate PlayerStatusHealthValueHuge            Alpha       "0" Linear 0.0 0.0
+    Animate PlayerStatusHealthValueHuge            Alpha       "0" Linear 0.035 0.0
+    
+    Animate PlayerStatusHealthValueHugeScanlines            FgColor "Health Normal" Linear 0.0 0.0
+    Animate PlayerStatusHealthValueHugeScanlines            FgColor "Health Normal" Linear 0.035 0.0
+    Animate PlayerStatusHealthValueHugeScanlines            Alpha       "0" Linear 0.0 0.0
+    Animate PlayerStatusHealthValueHugeScanlines            Alpha       "0" Linear 0.035 0.0
+    
+    Animate PlayerStatusHealthValueHugeScanlinesUL            FgColor "Health Normal" Linear 0.0 0.0
+    Animate PlayerStatusHealthValueHugeScanlinesUL            Alpha       "255" Linear 0.0 0.0
+    Animate PlayerStatusHealthValueHugeScanlinesUL            FgColor "Health Normal" Linear 0.035 0.0
+    Animate PlayerStatusHealthValueHugeScanlinesUL            Alpha       "0" Linear 0.035 0.0
+    
+    Animate PlayerStatusHealthValueHugeScanlinesUR            FgColor "Health Normal" Linear 0.035 0.0
+    Animate PlayerStatusHealthValueHugeScanlinesUR            Alpha       "0" Linear 0.035 0.0
+    Animate PlayerStatusHealthValueHugeScanlinesUR            FgColor "Health Normal" Linear 0.07 0.0
+    Animate PlayerStatusHealthValueHugeScanlinesUR            Alpha       "0" Linear 0.07 0.0
+
+    Animate PlayerStatusHealthValueHugeScanlinesDR            FgColor "Health Normal" Linear 0.07 0.0
+    Animate PlayerStatusHealthValueHugeScanlinesDR            Alpha       "0" Linear 0.07 0.0
+    Animate PlayerStatusHealthValueHugeScanlinesDR            FgColor "Health Normal" Linear 0.105 0.0
+    Animate PlayerStatusHealthValueHugeScanlinesDR            Alpha       "0" Linear 0.105 0.0
+    
+    Animate PlayerStatusHealthValueHugeScanlinesDL            FgColor "Health Normal" Linear 0.105 0.0
+    Animate PlayerStatusHealthValueHugeScanlinesDL            Alpha       "0" Linear 0.105 0.0
+    Animate PlayerStatusHealthValueHugeScanlinesDL            FgColor "Health Normal" Linear 0.140 0.0
+    Animate PlayerStatusHealthValueHugeScanlinesDL            Alpha       "0" Linear 0.140 0.0
     
     Animate PlayerStatusHealthValueSpectator   FgColor "Health Normal" Accel 0.0 0.0
     Animate PlayerStatusHealthValueTargetID    FgColor "Health Normal" Accel 0.0 0.0
@@ -460,19 +576,16 @@ event HudTournamentSetupPanelClose
 
 event UberchargeBg
 {
-    Animate UberchargeBg    bgcolor     "Heal Numbers"                        Linear 0.0 0.3
+    Animate UberchargeBg    bgcolor     "100 200 100 255"                        Linear 0.0 0.3
     Animate UberchargeBg    bgcolor     "0 0 0 0"        Linear 1.0 0.3
     
-    Animate UberchargeReady Alpha       "255"           Linear 0.0 0.2
-    Animate UberchargeReady FgColor     "Heal Numbers"        Linear 0.2 0.2
-    Animate UberchargeReady FgColor     "Uber Bar Color"       Linear 0.5 0.2
-    Animate UberchargeReady Alpha       "0"             Linear 0.7 0.2
-    
     Animate ChargeLabelScanlines Alpha       "255"           Linear 0.0 0.2
-    Animate ChargeLabelScanlines FgColor     "Heal Numbers"        Linear 0.2 0.2
-    Animate ChargeLabelScanlines FgColor     "Uber Bar Color"       Linear 0.5 0.2
+    Animate ChargeLabelScanlines FgColor     "100 200 100 255"        Linear 0.2 0.2
+    Animate ChargeLabelScanlines FgColor     "235 255 202 255"       Linear 0.5 0.2
     Animate ChargeLabelScanlines Alpha       "0"             Linear 0.7 0.2
-
+    
+    Animate ChargeLabel          FgColor       "140 200 140 255"             Linear 1.5 0.2
+    Animate ChargeLabel          FgColor       "235 226 202 255"             Linear 9.9 0.2
 }
 
 event HudMedicChargedBlink
@@ -484,12 +597,15 @@ event HudMedicChargedBlink
     Animate ChargeMeter3            FgColor     "Uber Bar Color"       Linear 0.2 0.2
     Animate ChargeMeter4            FgColor     "Uber Bar Color"       Linear 0.3 0.2
     
-    Animate ChargeMeter             FgColor     "Heal Numbers"        Linear 0.45 0.45
+    Animate ChargeMeter             FgColor     "100 200 100 255"        Linear 0.45 0.45
     
     Animate ChargeMeter1            FgColor     "Uber Bar Color"        Linear 0.4 0.2
     Animate ChargeMeter2            FgColor     "Uber Bar Color"        Linear 0.5 0.2
     Animate ChargeMeter3            FgColor     "Uber Bar Color"        Linear 0.6 0.2
     Animate ChargeMeter4            FgColor     "Uber Bar Color"        Linear 0.7 0.2
+    
+
+
 
     RunEvent HudMedicChargedLoop    0.9
 }

@@ -25,7 +25,7 @@ Scheme
         "Ammo In Reserve Low"                   "192 56 63 255"
         
         //The two is for the flicker for buff/hurt. Make the two you choose be close in color.
-        "Health Normal"                         "130 119 104 255"
+        "Health Normal"                         "235 226 202 255"
         "Health Buff"                           "92 128 166 255"
         "Health Buff2"                          "92 128 166 255"
         "Health Hurt"                           "192 56 63 255"
@@ -1439,6 +1439,45 @@ Scheme
                 "weight"    "500"
                 "additive"  "0"
                 "antialias" "1"
+            }
+        }
+        "HudFontHugeBold"
+        {
+            "1"
+            {
+                "name"      "TF2 Build"
+                "tall"      "60"
+                "tall_lodef"    "60"
+                "weight"    "500"
+                "additive"  "0"
+                "antialias" "1"
+            }
+        }
+        "HudFontHugeBoldBlur"
+        {
+            "1"
+            {
+                "name"      "TF2 Build"
+                "tall"      "60"
+                "tall_lodef"    "60"
+                "weight"    "500"
+                "additive"  "0"
+                "antialias" "1"
+                "blur"      "3"
+            }
+        }
+        "HudFontHugeBoldBlurScanlines"
+        {
+            "1"
+            {
+                "name"      "TF2 Build"
+                "tall"      "60"
+                "tall_lodef"    "60"
+                "weight"    "500"
+                "additive"  "0"
+                "antialias" "1"
+                "blur"      "3"
+                "scanlines"  "3"
             }
         }
 
