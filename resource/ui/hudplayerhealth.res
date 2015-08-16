@@ -80,7 +80,7 @@
     {
         "ControlName"   "CExLabel"
         "fieldName"     "PlayerStatusHealthValueHuge"
-        "xpos"          "46"
+        "xpos"          "45"
         "ypos"          "22"    [$WIN32]
         "zpos"          "5"
         "wide"          "90"
@@ -91,7 +91,41 @@
         "textAlignment" "center"    
         "font"          "HudFontHugeBold"
         "fgcolor"       "0 0 0 0"
-    }  
+    } 
+    "PlayerStatusHealthValueHugeL"
+    {
+        "ControlName"   "CExLabel"
+        "fieldName"     "PlayerStatusHealthValueHugeL"
+        "xpos"          "44"
+        "ypos"          "22"    [$WIN32]
+        "zpos"          "5"
+        "wide"          "90"
+        "tall"          "60"
+        "visible"       "1"
+        "enabled"       "1"
+        "labelText"     "%Health%"
+        "textAlignment" "center"    
+        "font"          "HudFontHugeBold"
+        "fgcolor"       "0 0 0 0"
+    } 
+
+    "PlayerStatusHealthValueHugeR"
+    {
+        "ControlName"   "CExLabel"
+        "fieldName"     "PlayerStatusHealthValueHugeR"
+        "xpos"          "47"
+        "ypos"          "22"    [$WIN32]
+        "zpos"          "5"
+        "wide"          "90"
+        "tall"          "60"
+        "visible"       "1"
+        "enabled"       "1"
+        "labelText"     "%Health%"
+        "textAlignment" "center"    
+        "font"          "HudFontHugeBold"
+        "fgcolor"       "0 0 0 0"
+    } 
+ 
     "PlayerStatusHealthValueHugeScanlines"
     {
         "ControlName"   "CExLabel"
