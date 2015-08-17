@@ -483,114 +483,250 @@ Scheme
         // fonts listed later in the order will only be used if they fulfill a range not already filled
         // if a font fails to load then the subsequent fonts will replace
 
-        "Crosshairs24"                          //1.17; 
-        {                                       //There and below — crosshair number in the table
-            "1"
-            {
-                "name"          "xhairs"
-                "tall"          "24"
-                "antialias"     "1"
-                "additive"      "0"
-                "outline"       "0"
-            }
-        }
-        "Crosshairs25"                          //1.10; 
+        "Crosshairs8"
         {
             "1"
             {
-                "name"          "xhairs"
-                "tall"          "25"
-                "antialias"     "1"
-                "additive"      "0"
-                "outline"       "0"
+            "name"          "Crosshairs"
+            "tall"          "8"
+            "weight"        "0"
+            "antialias"     "1"
             }
         }
-        "Crosshairs28"                          //1.8; 1.13; 1.14; 1.15; 
+        
+        "Crosshairs10"
         {
             "1"
             {
-                "name"          "xhairs"
-                "tall"          "28"
-                "antialias"     "1"
-                "additive"      "0"
-                "outline"       "0"
+            "name"          "Crosshairs"
+            "tall"          "10"
+            "weight"        "0"
+            "antialias"     "1"
             }
         }
-        "Crosshairs32"                          //1.9; 
+        
+        "Crosshairs12"
         {
             "1"
             {
-                "name"          "xhairs"
-                "tall"          "32"
-                "antialias"     "1"
-                "additive"      "0"
-                "outline"       "0"
+            "name"          "Crosshairs"
+            "tall"          "12"
+            "weight"        "0"
+            "antialias"     "1"
             }
         }
-        "CrosshairsOutline32"                   //1.11; 1.12; 
+        
+        "Crosshairs14"
         {
             "1"
             {
-                "name"          "xhairs"
-                "tall"          "32"
-                "antialias"     "0"
-                "additive"      "0"
-                "outline"       "1"
+            "name"          "Crosshairs"
+            "tall"          "14"
+            "weight"        "0"
+            "antialias"     "1"
             }
         }
-        "CrosshairsOutline15"                   //1.4; 
+        
+        "Crosshairs16"
         {
             "1"
             {
-                "name"          "xhairs"
-                "tall"          "15"
-                "antialias"     "0"
-                "additive"      "0"
-                "outline"       "1"
+            "name"          "Crosshairs"
+            "tall"          "16"
+            "weight"        "0"
+            "antialias"     "1"
             }
         }
-        "CrosshairsOutline16"                   //1.1; 1.2; 1.3; 1.5; 
+        
+        "Crosshairs18"
         {
             "1"
             {
-                "name"          "xhairs"
-                "tall"          "16"
-                "antialias"     "0"
-                "additive"      "0"
-                "outline"       "1"
+            "name"          "Crosshairs"
+            "tall"          "18"
+            "weight"        "0"
+            "antialias"     "1"
             }
         }
-        "CrosshairsOutline24"                   //1.6; 1.7; 
+
+        "CrosshairsOutline18"
         {
             "1"
             {
-                "name"          "xhairs"
-                "tall"          "24"
-                "antialias"     "0"
-                "additive"      "0"
-                "outline"       "1"
+            "name"          "Crosshairs"
+            "tall"          "18"
+            "weight"        "0"
+            "antialias"     "1"
+            "outline"       "1"
             }
         }
-        "KonrWings"                             //2.1;
+        
+        "Crosshairs20"
         {
             "1"
             {
-                "name"          "xhairs"
-                "tall"          "18"
-                "weight"        "0"
-                "antialias"     "1"
+            "name"          "Crosshairs"
+            "tall"          "20"
+            "weight"        "0"
+            "antialias"     "1"
             }
         }
-        "CODHitmarker"                          //3.1; 3.2; 3.3; 3.4; 
+        
+        "Crosshairs22"
         {
             "1"
             {
-                "name"          "xhairs"
-                "tall"          "6"
-                "weight"        "500"
-                "additive"      "0"
-                "antialias"     "1"
-                "outline"       "0"
+            "name"          "Crosshairs"
+            "tall"          "22"
+            "weight"        "0"
+            "antialias"     "1"
+            }
+        }
+        
+        "Crosshairs24"
+        {
+            "1"
+            {
+            "name"          "Crosshairs"
+            "tall"          "24"
+            "weight"        "0"
+            "antialias"     "1"
+            }
+        }
+        
+        "CrosshairsOutline24"
+        {
+            "1"
+            {
+            "name"          "Crosshairs"
+            "tall"          "24"
+            "weight"        "0"
+            "antialias"     "1"
+            "outline"       "1"
+            }
+        }
+        
+        "Crosshairs26"
+        {
+            "1"
+            {
+            "name"          "Crosshairs"
+            "tall"          "26"
+            "weight"        "0"
+            "antialias"     "1"
+            }
+        }
+        
+        "CrosshairsOutline26"
+        {
+            "1"
+            {
+            "name"          "Crosshairs"
+            "tall"          "26"
+            "weight"        "0"
+            "antialias"     "1"
+            "outline"       "1"
+            }
+        }
+        
+        "Crosshairs28"
+        {
+            "1"
+            {
+            "name"          "Crosshairs"
+            "tall"          "28"
+            "weight"        "0"
+            "antialias"     "1"
+            }
+        }
+        
+        "Crosshairs30"
+        {
+            "1"
+            {
+            "name"          "Crosshairs"
+            "tall"          "30"
+            "weight"        "0"
+            "antialias"     "1"
+            }
+        }
+        
+        "Crosshairs32"
+        {
+            "1"
+            {
+            "name"          "Crosshairs"
+            "tall"          "32"
+            "weight"        "0"
+            "antialias"     "1"
+            }
+        }
+
+        "CrosshairsOutline32"
+        {
+            "1"
+            {
+            "name"          "Crosshairs"
+            "tall"          "32"
+            "weight"        "0"
+            "antialias"     "1"
+            "outline"       "1"
+            }
+        }
+        
+        "Crosshairs34"
+        {
+            "1"
+            {
+            "name"          "Crosshairs"
+            "tall"          "34"
+            "weight"        "0"
+            "antialias"     "1"
+            }
+        }
+        
+        "CrosshairsOutline34"
+        {
+            "1"
+            {
+            "name"          "Crosshairs"
+            "tall"          "34"
+            "weight"        "0"
+            "antialias"     "1"
+            "outline"       "1"
+            }
+        }
+        
+        "Crosshairs36"
+        {
+            "1"
+            {
+            "name"          "Crosshairs"
+            "tall"          "36"
+            "weight"        "0"
+            "antialias"     "1"
+            }
+        }
+        
+        "Crosshairs38"
+        {
+            "1"
+            {
+            "name"          "Crosshairs"
+            "tall"          "38"
+            "weight"        "0"
+            "antialias"     "1"
+            }
+        }
+        
+        "Crosshairs40"
+        {
+            "1"
+            {
+            "name"          "Crosshairs"
+            "tall"          "40"
+            "weight"        "0"
+            "antialias"     "1"
             }
         }
         "Surface14"

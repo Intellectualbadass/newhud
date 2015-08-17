@@ -31,7 +31,7 @@
     {
         "ControlName"       "ScalableImagePanel"
         "fieldName"     "TargetIDBG_Spec_Blue"
-        "xpos"          "24"
+        "xpos"          "0"
         "ypos"          "10"
         "zpos"          "-1"
         "wide"          "252"
@@ -53,7 +53,7 @@
     {
         "ControlName"       "ScalableImagePanel"
         "fieldName"     "TargetIDBG_Spec_Red"
-        "xpos"          "24"
+        "xpos"          "0"
         "ypos"          "10"
         "zpos"          "-1"
         "wide"          "252"
