@@ -6,12 +6,12 @@
 		"ControlName"	"EditablePanel"
 		"fieldName"		"HudPlayerClass"
 		"xpos"			"0"
-		"ypos"			"-40"
-		"ypos_minmode"	"2"
+		"ypos"			"0"
+		"ypos_minmode"	"18"
 		"zpos"			"1"
 		"wide"			"f0"
 		"tall"			"480"
-		"visible"		"0"
+		"visible"		"1"
 		"enabled"		"1"		
 	}
 	"PlayerStatusClassImage"
@@ -21,7 +21,7 @@
 		"xpos"			"15"	[$WIN32]
 		"xpos_minmode"	"15"	[$WIN32]
 		"ypos"			"r88"	[$WIN32]
-		"ypos_minmode"	"r75"	[$WIN32]
+		"ypos_minmode"	"r54"	[$WIN32]
 		"xpos"			"57"	[$X360]
 		"ypos"			"r110"	[$X360]
 		"zpos"			"2"
@@ -41,7 +41,7 @@
 		"xpos"			"3"		[$WIN32]
 		"xpos_minmode"	"-5"	[$WIN32]
 		"ypos"			"r67"	[$WIN32]
-		"ypos_minmode"	"r66"	[$WIN32]
+		"ypos_minmode"	"r44"	[$WIN32]
 		"xpos"			"35"	[$X360]
 		"ypos"			"r89"	[$X360]
 		"zpos"			"2"
@@ -72,7 +72,7 @@
 		"tall"			"55"
 		"tall_minmode"	"27"
 		"visible"		"0"
-		"enabled"		"0"
+		"enabled"		"1"
 		"image"			"../hud/class_spy_outline"
 		"scaleImage"	"1"	
 	}		
@@ -80,8 +80,8 @@
 	{
 		"ControlName"	"CTFImagePanel"
 		"fieldName"		"PlayerStatusClassImageBG"
-		"xpos"			"-4333"		
-		"xpos_minmode"	"-1111"		
+		"xpos"			"-43"		
+		"xpos_minmode"	"-11"		
 		"ypos"			"r53"	
 		"ypos_minmode"		"r40"	
 		"zpos"			"1"		
@@ -89,8 +89,8 @@
 		"wide_minmode"	"40"
 		"tall"			"40"
 		"alpha"			"175"
-		"visible"		"0"
-		"enabled"		"0"
+		"visible"		"1"
+		"enabled"		"1"
 		"scaleImage"	"1"
 		"image"			"replay/thumbnails/bg_red"	
 		"teambg_2"		"replay/thumbnails/bg_red"
@@ -103,8 +103,8 @@
 	{
 		"ControlName"	"CTFImagePanel"
 		"fieldName"		"classmodelpanelBG"
-		"xpos"			"-4333"		
-		"xpos_minmode"	"-1111"		
+		"xpos"			"-43"		
+		"xpos_minmode"	"-11"		
 		"ypos"			"r53"	
 		"ypos_minmode"		"r40"	
 		"zpos"			"1"		
@@ -112,8 +112,8 @@
 		"wide_minmode"	"40"
 		"tall"			"40"
 		"alpha"			"175"
-		"visible"		"0"
-		"enabled"		"0"
+		"visible"		"1"
+		"enabled"		"1"
 		"scaleImage"	"1"
 		"image"				"replay/thumbnails/bg_red"	
 		"teambg_2"			"replay/thumbnails/bg_red"
@@ -135,7 +135,7 @@
 		"wide"			"100"
 		"wide_minmode"	"52"
 		"tall"			"200"
-		"tall_minmode"	"50"
+		"tall_minmode"	"102"
 		"autoResize"	"0"
 		"pinCorner"		"0"
 		"visible"		"1"

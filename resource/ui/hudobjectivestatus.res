@@ -5,15 +5,10 @@
 		"ControlName"		"EditablePanel"
 		"fieldName"			"ObjectiveStatusTimePanel"
 		"xpos"				"c-55"
-		"xpos_hidef"		"c-150"
-		"xpos_lodef"		"c-150"
 		"ypos"				"0"	[$WIN32]
 		"ypos_minmode"		"-14"	[$WIN32]
-		"ypos"				"24"	[$X360]
 		"zpos"				"1"
 		"wide"				"110"
-		"wide_hidef"		"300"
-		"wide_lodef"		"300"
 		"tall"				"150"
 		"visible"			"0"
 		"enabled"			"1"
@@ -32,11 +27,10 @@
 			"fieldName"		"TimePanelValue"
 			"font"			"HudFontMediumSmall"
 			"font_minmode"	"HudFontSmall"
-			"font_lodef"	"HudFontMedium"
 			"fgcolor"		"TanLight"
-			"xpos"			"18"
+			"xpos"			"27"
 			"xpos_minmode"	"34"
-			"ypos"			"11"
+			"ypos"			"1"
 			"ypos_minmode"	"6"
 			"ypos_hidef"	"15"
 			"ypos_lodef"	"18"
@@ -49,5 +43,6 @@
 			"textAlignment"		"center"
 			"labelText"		"0:00"
 		}	
+		
 	}
 }

@@ -1,16 +1,14 @@
-"Resource/UI/HudItemEffectMeter_Engineer.res"
+"Resource/UI/HudItemEffectMeter_Demoman.res"
 {
 	HudItemEffectMeter
 	{
 		"fieldName"		"HudItemEffectMeter"
 		"visible"		"1"
 		"enabled"		"1"
-		"xpos"			"r170"	[$WIN32]
-		"ypos"			"r87"	[$WIN32]
-		"xpos_minmode"	"r70"	[$WIN32]
-		"ypos_minmode"	"r74"	[$WIN32]
-		"xpos"			"r194"	[$X360]
-		"ypos"			"r74"	[$X360]
+		"xpos"			"94"	[$WIN32]
+		"ypos"			"r55"	[$WIN32]
+		"xpos_minmode"	"78"	[$WIN32]
+		"ypos_minmode"	"r40"	[$WIN32]
 		"wide"			"100"
 		"tall"			"50"
 		"MeterFG"		"White"
@@ -21,11 +19,11 @@
 	{
 		"ControlName"	"CTFImagePanel"
 		"fieldName"		"ItemEffectMeterBG"
-		"xpos"			"22"
-		"ypos"			"10"
+		"xpos"			"24"
+		"ypos"			"13"
 		"zpos"			"0"
-		"wide"			"52"
-		"tall"			"30"
+		"wide"			"44"
+		"tall"			"28"
 		"alpha"			"175"
 		"visible"		"1"
 		"visible_minmode"	"0"
@@ -35,15 +33,15 @@
 		"teambg_2"		"replay/thumbnails/bg_red"
 		"teambg_2_lodef"	"replay/thumbnails/bg_bluef"
 		"teambg_3"		"replay/thumbnails/bg_blue"
-		"teambg_3_lodef"	"replay/thumbnails/bg_blue"					
+		"teambg_3_lodef"	"replay/thumbnails/bg_blue"						
 	}
 	
 	"ItemEffectMeterLabel"
 	{
 		"ControlName"			"CExLabel"
 		"fieldName"				"ItemEffectMeterLabel"
-		"xpos"					"27"
-		"ypos"					"27"
+		"xpos"					"25"
+		"ypos"					"29"
 		"zpos"					"2"
 		"wide"					"41"
 		"tall"					"15"
@@ -52,7 +50,7 @@
 		"visible"				"1"
 		"enabled"				"1"
 		"tabPosition"			"0"
-		"labelText"				"#TF_Ball"
+		"labelText"				"#TF_KillStreak"
 		"textAlignment"			"center"
 		"dulltext"				"0"
 		"brighttext"			"0"
@@ -65,7 +63,7 @@
 		"fieldName"				"ItemEffectMeter"
 		"font"					"Default"
 		"xpos"					"25"
-		"ypos"					"23"
+		"ypos"					"25"
 		"ypos_minmode"			"0"
 		"xpos_minmode"			"0"
 		"zpos"					"2"
@@ -85,8 +83,9 @@
 	{
 		"ControlName"			"CExLabel"
 		"fieldName"				"ItemEffectMeterCount"
-		"xpos"					"27"
-		"ypos"					"10"
+		"xpos"					"25"
+		"ypos_minmode"			"20"
+		"ypos"					"12"
 		"zpos"					"2"
 		"wide"					"40"
 		"tall"					"20"	
@@ -99,5 +98,6 @@
 		"dulltext"				"0"
 		"brighttext"			"0"
 		"font"					"HudFontMedium"
+		"font_minmode"			"HudFontSmall"
 	}
 }

@@ -27,11 +27,13 @@ Scheme
         //The two is for the flicker for buff/hurt. Make the two you choose be close in color.
         "Health Normal"                         "235 226 202 255"
         "Health Buff"                           "92 128 166 255"
-        "Health Buff2"                          "92 128 166 255"
-        "Health Hurt"                           "192 56 63 255"
-        "Health Hurt2"                          "192 56 63 255"
+        "Health Buff Blur"                      "74 82 132 255"
+        "Health Hurt"                           "255 180 20 255"
+        "Health Hurt Blur"                      "255 50 0 255"
+
         
         "Uber Bar Color"                        "235 226 202 255"
+        "Uber Ready Color"                      "100 200 100 255"
         "Charge Flash"                          "46 43 42 255"
         "Uber Ready Panel"                      "46 43 42 255"
     
@@ -3631,6 +3633,11 @@ Scheme
             "backgroundtype" "2"
         }
 
+                FuckinBorderDude
+        {
+            "color" "32 32 32 255"
+            "offset" "0 0"
+        }
         ComboBoxBorder
         {
             "inset" "0 0 1 1"

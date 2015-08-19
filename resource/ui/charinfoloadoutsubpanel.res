@@ -103,7 +103,7 @@
         "enabled"       "1"
         "tabPosition"   "0"
         "labeltext"     ""
-        "font"          "HudFontMediumBold"
+        "font"          "HudFontSmallBold"
         "textAlignment" "center"
         "dulltext"      "0"
         "brighttext"    "0"
@@ -114,8 +114,8 @@
         
         "paintbackground" "0"
         
-        "image_default"     "class_sel_sm_scout_inactive"
-        "image_armed"       "class_sel_sm_scout_active"
+        "image_default"     "contracts/photo_scout1"
+        "image_armed"       "contracts/photo_scout1"
         
         "SubImage"
         {
@@ -160,8 +160,55 @@
         
         "paintbackground" "0"
         
-        "image_default"     "class_sel_sm_soldier_inactive"
-        "image_armed"       "class_sel_sm_soldier_active"
+        "image_default"     "contracts/photo_soldier1"
+        "image_armed"       "contracts/photo_soldier1"
+        
+        
+        "SubImage"
+        {
+            "ControlName"   "ImagePanel"
+            "fieldName"     "SubImage"
+            "xpos"          "0"
+            "ypos"          "0"
+            "zpos"          "1"
+            "wide"          "90"
+            "tall"          "90"
+            "visible"       "1"
+            "enabled"       "1"
+            "image"         ""
+            "scaleImage"    "1"
+        }               
+    }
+    
+    // PYRO
+    "C_Pyro"
+    {
+        "ControlName"   "CExImageButton"
+        "fieldName"     "C_Pyro"
+        "xpos"          "c-205"
+        "ypos"          "100"
+        "zpos"          "3"
+        "wide"          "90"
+        "tall"          "90"
+        "autoResize"    "0"
+        "pinCorner"     "0"
+        "visible"       "1"
+        "enabled"       "1"
+        "tabPosition"   "0"
+        "labeltext"     ""
+        "font"          ""
+        "textAlignment" "center"
+        "dulltext"      "0"
+        "brighttext"    "0"
+        "default"       "0"
+        "sound_depressed"   "UI/buttonclick.wav"
+        "sound_released"    "UI/buttonclickrelease.wav"
+        "Command"       "loadout pyro"
+        
+        "paintbackground" "0"
+        
+        "image_default"     "contracts/photo_pyro1"
+        "image_armed"       "contracts/photo_pyro1"
         
         
         "SubImage"
@@ -185,7 +232,7 @@
     {
         "ControlName"   "CExImageButton"
         "fieldName"     "C_Demoman"
-        "xpos"          "c-205"
+        "xpos"          "c-125"
         "ypos"          "100"
         "zpos"          "3"
         "wide"          "90"
@@ -207,8 +254,8 @@
         
         "paintbackground" "0"
         
-        "image_default"     "class_sel_sm_demo_inactive"
-        "image_armed"       "class_sel_sm_demo_active"
+        "image_default"     "contracts/photo_demo1"
+        "image_armed"       "contracts/photo_demo1"
         
         
         "SubImage"
@@ -226,104 +273,13 @@
             "scaleImage"    "1"
         }               
     }   
-    // MEDIC
-    "G_Medic"
-    {
-        "ControlName"   "CExImageButton"
-        "fieldName"     "G_Medic"
-        "xpos"          "c-125"
-        "ypos"          "100"
-        "zpos"          "3"
-        "wide"          "90"
-        "tall"          "90"
-        "autoResize"    "0"
-        "pinCorner"     "0"
-        "visible"       "1"
-        "enabled"       "1"
-        "tabPosition"   "0"
-        "labeltext"     ""
-        "font"          ""
-        "textAlignment" "center"
-        "dulltext"      "0"
-        "brighttext"    "0"
-        "default"       "0"
-        "sound_depressed"   "UI/buttonclick.wav"
-        "sound_released"    "UI/buttonclickrelease.wav"
-        "Command"       "loadout medic"
-        
-        "paintbackground" "0"
-        
-        "image_default"     "class_sel_sm_medic_inactive"
-        "image_armed"       "class_sel_sm_medic_active"
-        
-        
-        "SubImage"
-        {
-            "ControlName"   "ImagePanel"
-            "fieldName"     "SubImage"
-            "xpos"          "0"
-            "ypos"          "0"
-            "zpos"          "1"
-            "wide"          "90"
-            "tall"          "90"
-            "visible"       "1"
-            "enabled"       "1"
-            "image"         ""
-            "scaleImage"    "1"
-        }               
-    }
-    // PYRO
-    "C_Pyro"
-    {
-        "ControlName"   "CExImageButton"
-        "fieldName"     "C_Pyro"
-        "xpos"          "c-45"
-        "ypos"          "100"
-        "zpos"          "3"
-        "wide"          "90"
-        "tall"          "90"
-        "autoResize"    "0"
-        "pinCorner"     "0"
-        "visible"       "1"
-        "enabled"       "1"
-        "tabPosition"   "0"
-        "labeltext"     ""
-        "font"          ""
-        "textAlignment" "center"
-        "dulltext"      "0"
-        "brighttext"    "0"
-        "default"       "0"
-        "sound_depressed"   "UI/buttonclick.wav"
-        "sound_released"    "UI/buttonclickrelease.wav"
-        "Command"       "loadout pyro"
-        
-        "paintbackground" "0"
-        
-        "image_default"     "class_sel_sm_pyro_inactive"
-        "image_armed"       "class_sel_sm_pyro_active"
-        
-        
-        "SubImage"
-        {
-            "ControlName"   "ImagePanel"
-            "fieldName"     "SubImage"
-            "xpos"          "0"
-            "ypos"          "0"
-            "zpos"          "1"
-            "wide"          "90"
-            "tall"          "90"
-            "visible"       "1"
-            "enabled"       "1"
-            "image"         ""
-            "scaleImage"    "1"
-        }               
-    }
+    
     // HEAVY
     "C_Heavy"
     {
         "ControlName"   "CExImageButton"
         "fieldName"     "C_Heavy"
-        "xpos"          "c35"
+        "xpos"          "c-45"
         "ypos"          "100"
         "zpos"          "3"
         "wide"          "90"
@@ -345,8 +301,8 @@
         
         "paintbackground" "0"
         
-        "image_default"     "class_sel_sm_heavy_inactive"
-        "image_armed"       "class_sel_sm_heavy_active"
+        "image_default"     "contracts/photo_heavy1"
+        "image_armed"       "contracts/photo_heavy1"
         
         
         "SubImage"
@@ -370,7 +326,7 @@
     {
         "ControlName"   "CExImageButton"
         "fieldName"     "C_Engineer"
-        "xpos"          "c115"
+        "xpos"          "c35"
         "ypos"          "100"
         "zpos"          "3"
         "wide"          "90"
@@ -392,8 +348,8 @@
         
         "paintbackground" "0"
         
-        "image_default"     "class_sel_sm_engineer_inactive"
-        "image_armed"       "class_sel_sm_engineer_active"
+        "image_default"     "contracts/photo_engineer1"
+        "image_armed"       "contracts/photo_engineer1"
         
         
         "SubImage"
@@ -412,7 +368,52 @@
         }               
     }   
     
-
+    // MEDIC
+    "G_Medic"
+    {
+        "ControlName"   "CExImageButton"
+        "fieldName"     "G_Medic"
+        "xpos"          "c115"
+        "ypos"          "100"
+        "zpos"          "3"
+        "wide"          "90"
+        "tall"          "90"
+        "autoResize"    "0"
+        "pinCorner"     "0"
+        "visible"       "1"
+        "enabled"       "1"
+        "tabPosition"   "0"
+        "labeltext"     ""
+        "font"          ""
+        "textAlignment" "center"
+        "dulltext"      "0"
+        "brighttext"    "0"
+        "default"       "0"
+        "sound_depressed"   "UI/buttonclick.wav"
+        "sound_released"    "UI/buttonclickrelease.wav"
+        "Command"       "loadout medic"
+        
+        "paintbackground" "0"
+        
+        "image_default"     "contracts/photo_medic1"
+        "image_armed"       "contracts/photo_medic1"
+        
+        
+        "SubImage"
+        {
+            "ControlName"   "ImagePanel"
+            "fieldName"     "SubImage"
+            "xpos"          "0"
+            "ypos"          "0"
+            "zpos"          "1"
+            "wide"          "90"
+            "tall"          "90"
+            "visible"       "1"
+            "enabled"       "1"
+            "image"         ""
+            "scaleImage"    "1"
+        }               
+    }   
     
     // SNIPER
     "G_Sniper"
@@ -441,8 +442,8 @@
         
         "paintbackground" "0"
         
-        "image_default"     "class_sel_sm_sniper_inactive"
-        "image_armed"       "class_sel_sm_sniper_active"
+        "image_default"     "contracts/photo_sniper1"
+        "image_armed"       "contracts/photo_sniper1"
         
         
         "SubImage"
@@ -488,8 +489,8 @@
         
         "paintbackground" "0"
         
-        "image_default"     "class_sel_sm_spy_inactive"
-        "image_armed"       "class_sel_sm_spy_active"
+        "image_default"     "contracts/photo_spy1"
+        "image_armed"       "contracts/photo_spy1"
         
         
         "SubImage"
@@ -548,16 +549,15 @@
         "wrap"          "1"
         "fgcolor"       "TanLight"
         "centerwrap"    "1"
-    }              
-    
-    "C_TDemo"
+    }           
+
+    "C_TPyro"
     {
         "ControlName"   "CExLabel"
-        "fieldName"     "C_TDemo"
+        "fieldName"     "C_TPyro"
         "font"          "CTF10Text"
-        "labelText"     "Demoman"
+        "labelText"     "Pyro"
         "textAlignment" "center"
-
         "xpos"          "c-205"
         "ypos"          "190"
         "zpos"          "5"
@@ -570,14 +570,14 @@
         "wrap"          "1"
         "fgcolor"       "TanLight"
         "centerwrap"    "1"
-    }
+    }   
     
-    "C_TMedic"
+    "C_TDemo"
     {
         "ControlName"   "CExLabel"
-        "fieldName"     "C_TMedic"
+        "fieldName"     "C_TDemo"
         "font"          "CTF10Text"
-        "labelText"     "Medic"
+        "labelText"     "Demoman"
         "textAlignment" "center"
         "xpos"          "c-125"
         "ypos"          "190"
@@ -592,26 +592,7 @@
         "fgcolor"       "TanLight"
         "centerwrap"    "1"
     }
-    "C_TPyro"
-    {
-        "ControlName"   "CExLabel"
-        "fieldName"     "C_TPyro"
-        "font"          "CTF10Text"
-        "labelText"     "Pyro"
-        "textAlignment" "center"
-        "xpos"          "c-45"
-        "ypos"          "190"
-        "zpos"          "5"
-        "wide"          "90"
-        "tall"          "25"
-        "autoResize"    "0"
-        "pinCorner"     "0"
-        "visible"       "1"
-        "enabled"       "1"
-        "wrap"          "1"
-        "fgcolor"       "TanLight"
-        "centerwrap"    "1"
-    }
+    
     "C_THeavy"
     {
         "ControlName"   "CExLabel"
@@ -619,7 +600,7 @@
         "font"          "CTF10Text"
         "labelText"     "Heavy"
         "textAlignment" "center"
-        "xpos"          "c35"
+        "xpos"          "c-45"
         "ypos"          "190"
         "zpos"          "5"
         "wide"          "90"
@@ -640,7 +621,7 @@
         "font"          "CTF10Text"
         "labelText"     "Engineer"
         "textAlignment" "center"
-        "xpos"          "c115"
+        "xpos"          "c35"
         "ypos"          "190"
         "zpos"          "5"
         "wide"          "90"
@@ -654,7 +635,26 @@
         "centerwrap"    "1"
     }
     
-
+    "C_TMedic"
+    {
+        "ControlName"   "CExLabel"
+        "fieldName"     "C_TMedic"
+        "font"          "CTF10Text"
+        "labelText"     "Medic"
+        "textAlignment" "center"
+        "xpos"          "c115"
+        "ypos"          "190"
+        "zpos"          "5"
+        "wide"          "90"
+        "tall"          "25"
+        "autoResize"    "0"
+        "pinCorner"     "0"
+        "visible"       "1"
+        "enabled"       "1"
+        "wrap"          "1"
+        "fgcolor"       "TanLight"
+        "centerwrap"    "1"
+    }
     
     "C_TSniper"
     {
@@ -725,7 +725,6 @@
         "paintbackground"   "1"
         "fgcolor"       "TanDark"
     }
-
     //// END OF CUSTOM ELEMENTS ////
     
     "CharInfoLoadoutSubPanel"

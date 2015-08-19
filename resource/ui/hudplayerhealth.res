@@ -517,7 +517,7 @@
         "labelText"     "%Health%"
         "textAlignment" "center"    
         "font"                  "HudFontBiggerBoldBlur"
-        "fgcolor_override"      "Black"
+        "fgcolor_override"      "0 0 0 0"
     }
      "PlayerStatusHealthValueBlurU"
     {

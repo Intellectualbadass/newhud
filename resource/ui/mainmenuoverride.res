@@ -58,6 +58,54 @@
             "enabled"   "1"
         }
     }
+    "VersionPanel"
+    {
+        "ControlName" "EditablePanel"
+        "fieldName" "VersionPanel"
+        "xpos" "0"
+        "ypos" "r441"
+        "zpos" "-1"
+        "wide" "200"
+        "tall" "50"
+        "visible" "1"
+        "PaintBackgroundType" "0"
+        "bgcolor_override" "TanDarker"
+        "VersionNumber"
+        {
+            "ControlName"   "CExLabel"
+            "fieldName" "VersionNumber"
+            "font"  "HudFontSmallBold"
+            "fgcolor_override"   "TanLight"
+            "labelText" "vb6 - we have a name"
+            "textAlignment" "west"
+            "xpos"  "20"
+            "ypos"  "0"
+            "wide"  "200"
+            "tall"  "30"
+            "autoResize"    "0"
+            "pinCorner" "0"
+            "visible"   "1"
+            "enabled"   "1"
+        }
+        "LastUpdate"
+        {
+            "ControlName"   "CExLabel"
+            "fieldName" "LastUpdate"
+            "font"  "HudFontSmallestBold"
+            "fgcolor_override"   "TanLight"
+            "labelText" "Aug 18"
+            "textAlignment" "west"
+            "xpos"  "20"
+            "ypos"  "10"
+            "wide"  "200"
+            "tall"  "50"
+            "autoResize"    "0"
+            "pinCorner" "0"
+            "visible"   "1"
+            "enabled"   "1"
+        }
+    }
+
     
     "InGamePanel"
     {
@@ -395,7 +443,7 @@
         "tall"          "40"
         "visible"       "1"
         "enabled"       "1"
-        "image"         "../logo/new_tf2_logo"
+        "image"         "../logo/tf2_logo"
         "scaleImage"    "1"
     }   
     
@@ -1686,18 +1734,18 @@
             }       
         }
     }
-    "StoreHasNewItemsImage"
+    "CompBetaImage"
     {
         "ControlName"   "ImagePanel"
-        "fieldName"     "StoreHasNewItemsImage"
-        "xpos"          "9999"
-        "ypos"          "9999"
+        "fieldName"     "CompBetaImage"
+        "xpos"          "c-45"
+        "ypos"          "5"
         "zpos"          "13"
-        "wide"          "24"
-        "tall"          "24"
+        "wide"          "20"
+        "tall"          "20"
         "visible"       "0"
         "enabled"       "0"
-        "image"         "../vgui/new"
+        "image"         "../vgui/beta"
         "scaleImage"    "1"
     }
     
@@ -2165,22 +2213,20 @@
     }
 
     // command comes from GameMenu.res
-    "PlayPVEButton"
+    
+    "PlayCompButton"
     {
         "ControlName"   "EditablePanel"
-        "fieldname"     "PlayPVEButton"
+        "fieldname"     "PlayCompButton"
         "xpos"          "c-120"
         "ypos"          "0"
         "zpos"          "11"
         "wide"          "120"
         "tall"          "40"
         "visible"       "1"
+        "enabled"       "1"
         "PaintBackgroundType"   "0"
 
-        "navUp"         "QuickplayButton"
-        "navDown"       "ServerBrowserButton"
-        "navRight"      "Notifications_ShowButtonPanel"
-        "navToRelay"    "SubButton"
 
         "SubButton"
         {
@@ -2215,7 +2261,6 @@
             
             "image_drawcolor"   "117 107 94 255"
             "image_armedcolor"  "235 226 202 255"
-
             "SubImage"
             {
                 "ControlName"   "ImagePanel"
@@ -2223,12 +2268,79 @@
                 "xpos"          "6"
                 "ypos"          "6"
                 "zpos"          "1"
-                "wide"          "14"
-                "tall"          "14"
+                "wide"          "1"
+                "tall"          "1"
                 "visible"       "0"
                 "enabled"       "0"
                 "scaleImage"    "1"
             }
+        }
+    }
+    "PlayPVEButton"
+    {
+        "ControlName"   "EditablePanel"
+        "fieldname"     "PlayPVEButton"
+        "xpos"          "c-22"
+        "ypos"          "3"
+        "zpos"          "12"
+        "wide"          "18"
+        "tall"          "18"
+        "visible"       "1"
+        "PaintBackgroundType"   "0"
+
+        "navUp"         "QuickplayButton"
+        "navDown"       "ServerBrowserButton"
+        "navRight"      "Notifications_ShowButtonPanel"
+        "navToRelay"    "SubButton"
+
+        "SubButton"
+        {
+            "ControlName"   "CExImageButton"
+            "fieldName"     "SubButton"
+            "xpos"          "0"
+            "ypos"          "0"
+            "wide"          "18"
+            "tall"          "18"
+            "autoResize"    "0"
+            "pinCorner"     "3"
+            "visible"       "1"
+            "enabled"       "1"
+            "tabPosition"   "0"
+            "textinsetx"    "100"
+            "use_proportional_insets" "1"
+            "font"          "HudFontSmallBold"
+            "textAlignment" "west"
+            "dulltext"      "0"
+            "brighttext"    "0"
+            "default"       "1"
+            "sound_depressed"   "UI/buttonclick.wav"
+            "sound_released"    "UI/buttonclickrelease.wav"
+            
+            "border_default"    "MainMenuMiniButtonDefault"
+            "border_armed"      "MainMenuMiniButtonArmed"
+            "paintbackground"   "0"
+            
+            "defaultFgColor_override" "46 43 42 255"
+            "armedFgColor_override" "46 43 42 255"
+            "depressedFgColor_override" "46 43 42 255"
+            
+            "image_drawcolor"   "235 226 202 255"
+            "image_armedcolor"  "235 226 202 255"
+            
+            "SubImage"
+            {
+                "ControlName"   "ImagePanel"
+                "fieldName"     "SubImage"
+                "xpos"          "3"
+                "ypos"          "3"
+                "zpos"          "1"
+                "wide"          "12"
+                "tall"          "12"
+                "visible"       "1"
+                "enabled"       "1"
+                "image"         "glyph_coop"
+                "scaleImage"    "1"
+            }  
         }
     }
     

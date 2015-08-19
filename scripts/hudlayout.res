@@ -505,27 +505,31 @@
         "fieldName" "HudDeathNotice"
         "visible" "1"
         "enabled" "1"
-        "xpos"   "350"  [$WIN32]
-        "ypos"   "385"  [$WIN32]
-        "wide"   "580"
+        "xpos"   "r640" [$WIN32]
+        "ypos"   "12"   [$WIN32]
+        "xpos"   "r672" [$X360]
+        "ypos"   "35"   [$X360]
+        "wide"   "628"
         "tall"   "468"
 
         "MaxDeathNotices" "7"
-        "IconScale"   "0.5"
-        "LineHeight"      "10"
-        "LineSpacing"     "-1"
-        "CornerRadius"    "1"
-        "RightJustify"    "0"   // If 1, draw notices from the right
+        "IconScale"   "0.35"
+        "LineHeight"      "16"
+        "LineSpacing"     "4"
+        "CornerRadius"    "3"
+        "RightJustify"    "1"   // If 1, draw notices from the right
         
         "TextFont"      "Default"
         
         "TeamBlue"      "HUDBlueTeamSolid"
         "TeamRed"       "HUDRedTeamSolid"
-        "IconColor"     "TanLight"
+        "IconColor"     "HudWhite"
         "LocalPlayerColor"  "HUDBlack"
 
         "BaseBackgroundColor"   "TanDarker"      [$WIN32]
         "LocalBackgroundColor"  "TanLight"   [$WIN32]
+        "BaseBackgroundColor"   "TanDarker"      [$X360]
+        "LocalBackgroundColor"  "0 0 0 255"     [$X360]
     }
 
     HudVehicle

@@ -1,0 +1,9 @@
+name=MANNterface
+desc=
+creator=Mann Co. Eggheads
+steamid=76561198042111402
+url=
+url=
+url=
+version=beta
+update_url=

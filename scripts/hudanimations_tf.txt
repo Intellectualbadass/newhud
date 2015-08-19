@@ -208,11 +208,11 @@ event HudHealthBonusPulse
     Animate PlayerStatusHealthBonusImage         Alpha       "0"              Linear 0.0 0.2
     Animate PlayerStatusHealthBonusImage         Alpha       "0"                Linear 0.2 0.4
     
-    //REMOVE SHADOWS
+    //REMOVE SHADOWS AND NORMAL HEALTH
     Animate PlayerStatusHealthValue                FgColor "Health Normal" Linear 0.0 0.0
     Animate PlayerStatusHealthValue                Alpha       "0" Linear 0.0 0.0
     
-    Animate PlayerStatusHealthValueBlur            FgColor "Black" Linear 0.0 0.0
+    Animate PlayerStatusHealthValueBlur            FgColor "0 0 0 0" Linear 0.0 0.0
     Animate PlayerStatusHealthValueBlur            Alpha       "0" Linear 0.0 0.0
 
     Animate PlayerStatusHealthValueBlurU           FgColor "Black" Linear 0.0 0.0
@@ -324,93 +324,176 @@ event HudHealthBonusPulse
     Animate PlayerStatusHealthValueD1              Alpha       "0"                Linear 1.6 0.0
     
     //BEGIN BOUNCE Blur   
-    Animate PlayerStatusHealthValueD1Blur              FgColor     "Health Buff"      Linear 0.0 0.0
+    Animate PlayerStatusHealthValueD1Blur              FgColor     "Health Buff Blur"      Linear 0.0 0.0
     Animate PlayerStatusHealthValueD1Blur              Alpha       "0"                Linear 0.0 0.0//loop
     
-    Animate PlayerStatusHealthValueHugeBlur              FgColor     "Health Buff"      Linear 0.0 0.0
+    Animate PlayerStatusHealthValueHugeBlur              FgColor     "Health Buff Blur"      Linear 0.0 0.0
     Animate PlayerStatusHealthValueHugeBlur              Alpha       "255"              Linear 0.0 0.0    
-    Animate PlayerStatusHealthValueHugeBlur              FgColor     "Health Buff"      Linear 0.1 0.0
+    Animate PlayerStatusHealthValueHugeBlur              FgColor     "Health Buff Blur"      Linear 0.1 0.0
     Animate PlayerStatusHealthValueHugeBlur              Alpha       "0"                Linear 0.1 0.0
     
-    Animate PlayerStatusHealthValueU1Blur              FgColor     "Health Buff"      Linear 0.1 0.0
+    Animate PlayerStatusHealthValueU1Blur              FgColor     "Health Buff Blur"      Linear 0.1 0.0
     Animate PlayerStatusHealthValueU1Blur              Alpha       "255"              Linear 0.1 0.0    
-    Animate PlayerStatusHealthValueU1Blur              FgColor     "Health Buff"      Linear 0.2 0.0
+    Animate PlayerStatusHealthValueU1Blur              FgColor     "Health Buff Blur"      Linear 0.2 0.0
     Animate PlayerStatusHealthValueU1Blur              Alpha       "0"                Linear 0.2 0.0
     
-    Animate PlayerStatusHealthValueU2Blur              FgColor     "Health Buff"      Linear 0.2 0.0
+    Animate PlayerStatusHealthValueU2Blur              FgColor     "Health Buff Blur"      Linear 0.2 0.0
     Animate PlayerStatusHealthValueU2Blur              Alpha       "255"              Linear 0.2 0.0    
-    Animate PlayerStatusHealthValueU2Blur              FgColor     "Health Buff"      Linear 0.3 0.0
+    Animate PlayerStatusHealthValueU2Blur              FgColor     "Health Buff Blur"      Linear 0.3 0.0
     Animate PlayerStatusHealthValueU2Blur              Alpha       "0"                Linear 0.3 0.0
     
-    Animate PlayerStatusHealthValueU3Blur              FgColor     "Health Buff"      Linear 0.3 0.0
+    Animate PlayerStatusHealthValueU3Blur              FgColor     "Health Buff Blur"      Linear 0.3 0.0
     Animate PlayerStatusHealthValueU3Blur              Alpha       "255"              Linear 0.3 0.0    
-    Animate PlayerStatusHealthValueU3Blur              FgColor     "Health Buff"      Linear 0.4 0.0
+    Animate PlayerStatusHealthValueU3Blur              FgColor     "Health Buff Blur"      Linear 0.4 0.0
     Animate PlayerStatusHealthValueU3Blur              Alpha       "0"                Linear 0.4 0.0
     
-    Animate PlayerStatusHealthValueU4Blur              FgColor     "Health Buff"      Linear 0.4 0.0
+    Animate PlayerStatusHealthValueU4Blur              FgColor     "Health Buff Blur"      Linear 0.4 0.0
     Animate PlayerStatusHealthValueU4Blur              Alpha       "255"              Linear 0.4 0.0    
-    Animate PlayerStatusHealthValueU4Blur              FgColor     "Health Buff"      Linear 0.5 0.0
+    Animate PlayerStatusHealthValueU4Blur              FgColor     "Health Buff Blur"      Linear 0.5 0.0
     Animate PlayerStatusHealthValueU4Blur              Alpha       "0"                Linear 0.5 0.0
     
-    Animate PlayerStatusHealthValueU3Blur              FgColor     "Health Buff"      Linear 0.5 0.0
+    Animate PlayerStatusHealthValueU3Blur              FgColor     "Health Buff Blur"      Linear 0.5 0.0
     Animate PlayerStatusHealthValueU3Blur              Alpha       "255"              Linear 0.5 0.0    
-    Animate PlayerStatusHealthValueU3Blur              FgColor     "Health Buff"      Linear 0.6 0.0
+    Animate PlayerStatusHealthValueU3Blur              FgColor     "Health Buff Blur"      Linear 0.6 0.0
     Animate PlayerStatusHealthValueU3Blur              Alpha       "0"                Linear 0.6 0.0
     
-    Animate PlayerStatusHealthValueU2Blur              FgColor     "Health Buff"      Linear 0.6 0.0
+    Animate PlayerStatusHealthValueU2Blur              FgColor     "Health Buff Blur"      Linear 0.6 0.0
     Animate PlayerStatusHealthValueU2Blur              Alpha       "255"              Linear 0.6 0.0    
-    Animate PlayerStatusHealthValueU2Blur              FgColor     "Health Buff"      Linear 0.7 0.0
+    Animate PlayerStatusHealthValueU2Blur              FgColor     "Health Buff Blur"      Linear 0.7 0.0
     Animate PlayerStatusHealthValueU2Blur              Alpha       "0"                Linear 0.7 0.0
     
-    Animate PlayerStatusHealthValueU1Blur              FgColor     "Health Buff"      Linear 0.7 0.0
+    Animate PlayerStatusHealthValueU1Blur              FgColor     "Health Buff Blur"      Linear 0.7 0.0
     Animate PlayerStatusHealthValueU1Blur              Alpha       "255"              Linear 0.7 0.0    
-    Animate PlayerStatusHealthValueU1Blur              FgColor     "Health Buff"      Linear 0.8 0.0
+    Animate PlayerStatusHealthValueU1Blur              FgColor     "Health Buff Blur"      Linear 0.8 0.0
     Animate PlayerStatusHealthValueU1Blur              Alpha       "0"                Linear 0.8 0.0
     
-    Animate PlayerStatusHealthValueHugeBlur              FgColor     "Health Buff"      Linear 0.8 0.0
+    Animate PlayerStatusHealthValueHugeBlur              FgColor     "Health Buff Blur"      Linear 0.8 0.0
     Animate PlayerStatusHealthValueHugeBlur              Alpha       "255"              Linear 0.8 0.0    
-    Animate PlayerStatusHealthValueHugeBlur              FgColor     "Health Buff"      Linear 0.9 0.0
+    Animate PlayerStatusHealthValueHugeBlur              FgColor     "Health Buff Blur"      Linear 0.9 0.0
     Animate PlayerStatusHealthValueHugeBlur              Alpha       "0"                Linear 0.9 0.0
     
-    Animate PlayerStatusHealthValueD1Blur              FgColor     "Health Buff"      Linear 0.9 0.0
+    Animate PlayerStatusHealthValueD1Blur              FgColor     "Health Buff Blur"      Linear 0.9 0.0
     Animate PlayerStatusHealthValueD1Blur              Alpha       "255"              Linear 0.9 0.0    
-    Animate PlayerStatusHealthValueD1Blur              FgColor     "Health Buff"      Linear 1.0 0.0
+    Animate PlayerStatusHealthValueD1Blur              FgColor     "Health Buff Blur"      Linear 1.0 0.0
     Animate PlayerStatusHealthValueD1Blur              Alpha       "0"                Linear 1.0 0.0
     
-    Animate PlayerStatusHealthValueD2Blur              FgColor     "Health Buff"      Linear 1.0 0.0
+    Animate PlayerStatusHealthValueD2Blur              FgColor     "Health Buff Blur"      Linear 1.0 0.0
     Animate PlayerStatusHealthValueD2Blur              Alpha       "255"              Linear 1.0 0.0    
-    Animate PlayerStatusHealthValueD2Blur              FgColor     "Health Buff"      Linear 1.1 0.0
+    Animate PlayerStatusHealthValueD2Blur              FgColor     "Health Buff Blur"      Linear 1.1 0.0
     Animate PlayerStatusHealthValueD2Blur              Alpha       "0"                Linear 1.1 0.0
     
-    Animate PlayerStatusHealthValueD3Blur              FgColor     "Health Buff"      Linear 1.1 0.0
+    Animate PlayerStatusHealthValueD3Blur              FgColor     "Health Buff Blur"      Linear 1.1 0.0
     Animate PlayerStatusHealthValueD3Blur              Alpha       "255"              Linear 1.1 0.0    
-    Animate PlayerStatusHealthValueD3Blur              FgColor     "Health Buff"      Linear 1.2 0.0
+    Animate PlayerStatusHealthValueD3Blur              FgColor     "Health Buff Blur"      Linear 1.2 0.0
     Animate PlayerStatusHealthValueD3Blur              Alpha       "0"                Linear 1.2 0.0
     
-    Animate PlayerStatusHealthValueD4Blur              FgColor     "Health Buff"      Linear 1.2 0.0
+    Animate PlayerStatusHealthValueD4Blur              FgColor     "Health Buff Blur"      Linear 1.2 0.0
     Animate PlayerStatusHealthValueD4Blur              Alpha       "255"              Linear 1.2 0.0    
-    Animate PlayerStatusHealthValueD4Blur              FgColor     "Health Buff"      Linear 1.3 0.0
+    Animate PlayerStatusHealthValueD4Blur              FgColor     "Health Buff Blur"      Linear 1.3 0.0
     Animate PlayerStatusHealthValueD4Blur              Alpha       "0"                Linear 1.3 0.0
     
-    Animate PlayerStatusHealthValueD3Blur              FgColor     "Health Buff"      Linear 1.3 0.0
+    Animate PlayerStatusHealthValueD3Blur              FgColor     "Health Buff Blur"      Linear 1.3 0.0
     Animate PlayerStatusHealthValueD3Blur              Alpha       "255"              Linear 1.3 0.0    
-    Animate PlayerStatusHealthValueD3Blur              FgColor     "Health Buff"      Linear 1.4 0.0
+    Animate PlayerStatusHealthValueD3Blur              FgColor     "Health Buff Blur"      Linear 1.4 0.0
     Animate PlayerStatusHealthValueD3Blur              Alpha       "0"                Linear 1.4 0.0
    
-    Animate PlayerStatusHealthValueD2Blur              FgColor     "Health Buff"      Linear 1.4 0.0
+    Animate PlayerStatusHealthValueD2Blur              FgColor     "Health Buff Blur"      Linear 1.4 0.0
     Animate PlayerStatusHealthValueD2Blur              Alpha       "255"              Linear 1.4 0.0    
-    Animate PlayerStatusHealthValueD2Blur              FgColor     "Health Buff"      Linear 1.5 0.0
+    Animate PlayerStatusHealthValueD2Blur              FgColor     "Health Buff Blur"      Linear 1.5 0.0
     Animate PlayerStatusHealthValueD2Blur              Alpha       "0"                Linear 1.5 0.0
     
-    Animate PlayerStatusHealthValueD1Blur              FgColor     "Health Buff"      Linear 1.5 0.0
+    Animate PlayerStatusHealthValueD1Blur              FgColor     "Health Buff Blur"      Linear 1.5 0.0
     Animate PlayerStatusHealthValueD1Blur              Alpha       "255"              Linear 1.5 0.0    
-    Animate PlayerStatusHealthValueD1Blur              FgColor     "Health Buff"      Linear 1.6 0.0
+    Animate PlayerStatusHealthValueD1Blur              FgColor     "Health Buff Blur"      Linear 1.6 0.0
     Animate PlayerStatusHealthValueD1Blur              Alpha       "0"                Linear 1.6 0.0
-
     
     //TARGETID
     Animate PlayerStatusHealthValueSpectator   FgColor "Health Buff" Linear 0.0 0.0
-    Animate PlayerStatusHealthValueTargetID    FgColor "Health Buff" Linear 0.0 0.0
+    
+    Animate PlayerStatusHealthValueTargetID              FgColor     "Health Buff"      Linear 0.0 0.0
+    Animate PlayerStatusHealthValueTargetID              Alpha       "255"                   Linear 0.0 0.0    
+    Animate PlayerStatusHealthValueTargetID              FgColor     "Health Buff"      Linear 0.1 0.0
+    Animate PlayerStatusHealthValueTargetID              Alpha       "0"                     Linear 0.1 0.0
+    
+    Animate PlayerStatusHealthValueTargetIDU1            FgColor     "Health Buff"      Linear 0.1 0.0
+    Animate PlayerStatusHealthValueTargetIDU1            Alpha       "255"                   Linear 0.1 0.0    
+    Animate PlayerStatusHealthValueTargetIDU1            FgColor     "Health Buff"      Linear 0.2 0.0
+    Animate PlayerStatusHealthValueTargetIDU1            Alpha       "0"                     Linear 0.2 0.0
+    
+    Animate PlayerStatusHealthValueTargetID            FgColor     "Health Buff"      Linear 0.2 0.0
+    Animate PlayerStatusHealthValueTargetID            Alpha       "255"                   Linear 0.2 0.0    
+    Animate PlayerStatusHealthValueTargetID            FgColor     "Health Buff"      Linear 0.3 0.0
+    Animate PlayerStatusHealthValueTargetID            Alpha       "0"                     Linear 0.3 0.0
+
+    Animate PlayerStatusHealthValueTargetIDD1            FgColor     "Health Buff"      Linear 0.3 0.0
+    Animate PlayerStatusHealthValueTargetIDD1            Alpha       "255"                   Linear 0.3 0.0    
+    Animate PlayerStatusHealthValueTargetIDD1            FgColor     "Health Buff"      Linear 0.4 0.0
+    Animate PlayerStatusHealthValueTargetIDD1            Alpha       "0"                     Linear 0.4 0.0
+    
+    Animate PlayerStatusHealthValueTargetID              FgColor     "Health Buff"      Linear 0.4 0.0
+    Animate PlayerStatusHealthValueTargetID              Alpha       "255"                   Linear 0.4 0.0    
+    Animate PlayerStatusHealthValueTargetID              FgColor     "Health Buff"      Linear 0.5 0.0
+    Animate PlayerStatusHealthValueTargetID              Alpha       "0"                     Linear 0.5 0.0
+    
+    Animate PlayerStatusHealthValueTargetIDU1            FgColor     "Health Buff"      Linear 0.5 0.0
+    Animate PlayerStatusHealthValueTargetIDU1            Alpha       "255"                   Linear 0.5 0.0    
+    Animate PlayerStatusHealthValueTargetIDU1            FgColor     "Health Buff"      Linear 0.6 0.0
+    Animate PlayerStatusHealthValueTargetIDU1            Alpha       "0"                     Linear 0.6 0.0
+    
+    Animate PlayerStatusHealthValueTargetID            FgColor     "Health Buff"      Linear 0.6 0.0
+    Animate PlayerStatusHealthValueTargetID            Alpha       "255"                   Linear 0.6 0.0    
+    Animate PlayerStatusHealthValueTargetID            FgColor     "Health Buff"      Linear 0.7 0.0
+    Animate PlayerStatusHealthValueTargetID            Alpha       "0"                     Linear 0.7 0.0
+    
+    Animate PlayerStatusHealthValueTargetIDD1            FgColor     "Health Buff"      Linear 0.7 0.0
+    Animate PlayerStatusHealthValueTargetIDD1            Alpha       "255"                   Linear 0.7 0.0    
+    Animate PlayerStatusHealthValueTargetIDD1            FgColor     "Health Buff"      Linear 0.8 0.0
+    Animate PlayerStatusHealthValueTargetIDD1            Alpha       "0"                     Linear 0.8 0.0
+
+    Animate PlayerStatusHealthValueTargetID              FgColor     "Health Buff"      Linear 0.8 0.0
+    Animate PlayerStatusHealthValueTargetID              Alpha       "255"                   Linear 0.8 0.0    
+    Animate PlayerStatusHealthValueTargetID              FgColor     "Health Buff"      Linear 0.9 0.0
+    Animate PlayerStatusHealthValueTargetID              Alpha       "0"                     Linear 0.9 0.0
+    
+    Animate PlayerStatusHealthValueTargetIDU1            FgColor     "Health Buff"      Linear 0.9 0.0
+    Animate PlayerStatusHealthValueTargetIDU1            Alpha       "255"                   Linear 0.9 0.0    
+    Animate PlayerStatusHealthValueTargetIDU1            FgColor     "Health Buff"      Linear 1.0 0.0
+    Animate PlayerStatusHealthValueTargetIDU1            Alpha       "0"                     Linear 1.0 0.0
+    
+    Animate PlayerStatusHealthValueTargetID            FgColor     "Health Buff"      Linear 1.0 0.0
+    Animate PlayerStatusHealthValueTargetID            Alpha       "255"                   Linear 1.0 0.0    
+    Animate PlayerStatusHealthValueTargetID            FgColor     "Health Buff"      Linear 1.1 0.0
+    Animate PlayerStatusHealthValueTargetID            Alpha       "0"                     Linear 1.1 0.0
+
+    Animate PlayerStatusHealthValueTargetIDD1            FgColor     "Health Buff"      Linear 1.1 0.0
+    Animate PlayerStatusHealthValueTargetIDD1            Alpha       "255"                   Linear 1.1 0.0    
+    Animate PlayerStatusHealthValueTargetIDD1            FgColor     "Health Buff"      Linear 1.2 0.0
+    Animate PlayerStatusHealthValueTargetIDD1            Alpha       "0"                     Linear 1.2 0.0
+    
+    Animate PlayerStatusHealthValueTargetID              FgColor     "Health Buff"      Linear 1.2 0.0
+    Animate PlayerStatusHealthValueTargetID              Alpha       "255"                   Linear 1.2 0.0    
+    Animate PlayerStatusHealthValueTargetID              FgColor     "Health Buff"      Linear 1.3 0.0
+    Animate PlayerStatusHealthValueTargetID              Alpha       "0"                     Linear 1.3 0.0
+    
+    Animate PlayerStatusHealthValueTargetIDU1            FgColor     "Health Buff"      Linear 1.3 0.0
+    Animate PlayerStatusHealthValueTargetIDU1            Alpha       "255"                   Linear 1.3 0.0    
+    Animate PlayerStatusHealthValueTargetIDU1            FgColor     "Health Buff"      Linear 1.4 0.0
+    Animate PlayerStatusHealthValueTargetIDU1            Alpha       "0"                     Linear 1.4 0.0
+    
+    Animate PlayerStatusHealthValueTargetID            FgColor     "Health Buff"      Linear 1.4 0.0
+    Animate PlayerStatusHealthValueTargetID            Alpha       "255"                   Linear 1.4 0.0    
+    Animate PlayerStatusHealthValueTargetID            FgColor     "Health Buff"      Linear 1.5 0.0
+    Animate PlayerStatusHealthValueTargetID           Alpha       "0"                     Linear 1.5 0.0
+    
+    Animate PlayerStatusHealthValueTargetIDD1            FgColor     "Health Buff"      Linear 1.5 0.0
+    Animate PlayerStatusHealthValueTargetIDD1            Alpha       "255"                   Linear 1.5 0.0    
+    Animate PlayerStatusHealthValueTargetIDD1            FgColor     "Health Buff"      Linear 1.6 0.0
+    Animate PlayerStatusHealthValueTargetIDD1            Alpha       "0"                     Linear 1.6 0.0
+    Animate PlayerStatusHealthValueTargetIDD1            FgColor     "Health Buff"      Linear 0.0 0.0
+    Animate PlayerStatusHealthValueTargetIDD1            Alpha       "0"                     Linear 0.0 0.0
+    
+    Animate PlayerStatusHealthValueTargetIDBlur            FgColor "Health Buff Blur" Linear 0.0 0.0
+    Animate PlayerStatusHealthValueTargetIDBlur            Alpha             "255" Linear 0.0 0.0
 
     RunEvent HudHealthBonusPulseLoop    1.6
 }
@@ -424,45 +507,12 @@ event HudHealthBonusPulseStop
 {
     StopEvent HudHealthBonusPulse 0.0
     StopEvent HudHealthBonusPulseLoop 0.0
-    
+
+    //RETURN TO NORMAL HEALTH AND SHADOWS   
     Animate PlayerStatusHealthValue                FgColor "Health Normal" Linear 0.0 0.0
     Animate PlayerStatusHealthValue                Alpha       "255" Linear 0.0 0.0
     
-    Animate PlayerStatusHealthValueHuge                FgColor "Health Normal" Linear 0.0 0.0
-    Animate PlayerStatusHealthValueHuge                Alpha       "0" Linear 0.0 0.0
-    
-    Animate PlayerStatusHealthValueHugeBlur                FgColor "Health Normal" Linear 0.0 0.0
-    Animate PlayerStatusHealthValueHugeBlur                Alpha       "0" Linear 0.0 0.0
-
-    Animate PlayerStatusHealthValueU1              FgColor     "Health Buff"      Linear 0.0 0.0
-    Animate PlayerStatusHealthValueU1              Alpha       "0"              Linear 0.0 0.0    
-
-    Animate PlayerStatusHealthValueU2              FgColor     "Health Buff"      Linear 0.0 0.0
-    Animate PlayerStatusHealthValueU2              Alpha       "0"              Linear 0.0 0.0    
-
-    
-    Animate PlayerStatusHealthValueU3              FgColor     "Health Buff"      Linear 0.0 0.0
-    Animate PlayerStatusHealthValueU3              Alpha       "0"              Linear 0.0 0.0    
-
-    
-    Animate PlayerStatusHealthValueU4              FgColor     "Health Buff"      Linear 0.0 0.0
-    Animate PlayerStatusHealthValueU4              Alpha       "0"              Linear 0.0 0.0    
-    
-    Animate PlayerStatusHealthValueD1              FgColor     "Health Buff"      Linear 0.0 0.0
-    Animate PlayerStatusHealthValueD1              Alpha       "0"              Linear 0.0 0.0    
-
-    Animate PlayerStatusHealthValueD2              FgColor     "Health Buff"      Linear 0.0 0.0
-    Animate PlayerStatusHealthValueD2              Alpha       "0"              Linear 0.0 0.0    
-
-    
-    Animate PlayerStatusHealthValueD3              FgColor     "Health Buff"      Linear 0.0 0.0
-    Animate PlayerStatusHealthValueD3              Alpha       "0"              Linear 0.0 0.0    
-
-    
-    Animate PlayerStatusHealthValueD4              FgColor     "Health Buff"      Linear 0.0 0.0
-    Animate PlayerStatusHealthValueD4              Alpha       "0"              Linear 0.0 0.0
-
-    Animate PlayerStatusHealthValueBlur            FgColor "Black" Linear 0.0 0.0
+    Animate PlayerStatusHealthValueBlur            FgColor "0 0 0 0" Linear 0.0 0.0
     Animate PlayerStatusHealthValueBlur            Alpha       "255" Linear 0.0 0.0
 
     Animate PlayerStatusHealthValueBlurU           FgColor "Black" Linear 0.0 0.0
@@ -487,10 +537,82 @@ event HudHealthBonusPulseStop
     Animate PlayerStatusHealthValueBlurDL          Alpha       "255" Linear 0.0 0.0
     
     Animate PlayerStatusHealthValueBlurDR          FgColor "Black" Linear 0.0 0.0
-    Animate PlayerStatusHealthValueBlurDR          Alpha       "255" Linear 0.0 0.0    
+    Animate PlayerStatusHealthValueBlurDR          Alpha       "255" Linear 0.0 0.0   
+ 
+    //REMOVE BOUNCING FRAMES   
+    Animate PlayerStatusHealthValueHuge            FgColor     "Health Normal"  Linear 0.0 0.0
+    Animate PlayerStatusHealthValueHuge            Alpha       "0"              Linear 0.0 0.0
 
+    Animate PlayerStatusHealthValueU1              FgColor     "Health Normal"    Linear 0.0 0.0
+    Animate PlayerStatusHealthValueU1              Alpha       "0"              Linear 0.0 0.0    
+
+    Animate PlayerStatusHealthValueU2              FgColor     "Health Normal"    Linear 0.0 0.0
+    Animate PlayerStatusHealthValueU2              Alpha       "0"              Linear 0.0 0.0    
+    
+    Animate PlayerStatusHealthValueU3              FgColor     "Health Normal"    Linear 0.0 0.0
+    Animate PlayerStatusHealthValueU3              Alpha       "0"              Linear 0.0 0.0    
+    
+    Animate PlayerStatusHealthValueU4              FgColor     "Health Normal"    Linear 0.0 0.0
+    Animate PlayerStatusHealthValueU4              Alpha       "0"              Linear 0.0 0.0    
+    
+    Animate PlayerStatusHealthValueD1              FgColor     "Health Normal"      Linear 0.0 0.0
+    Animate PlayerStatusHealthValueD1              Alpha       "0"              Linear 0.0 0.0    
+
+    Animate PlayerStatusHealthValueD2              FgColor     "Health Normal"      Linear 0.0 0.0
+    Animate PlayerStatusHealthValueD2              Alpha       "0"              Linear 0.0 0.0    
+    
+    Animate PlayerStatusHealthValueD3              FgColor     "Health Normal"      Linear 0.0 0.0
+    Animate PlayerStatusHealthValueD3              Alpha       "0"              Linear 0.0 0.0    
+    
+    Animate PlayerStatusHealthValueD4              FgColor     "Health Normal"      Linear 0.0 0.0
+    Animate PlayerStatusHealthValueD4              Alpha       "0"              Linear 0.0 0.0
+
+    //REMOVE BOUNCING BLUR FRAMES   
+    Animate PlayerStatusHealthValueHugeBlur            FgColor "Health Normal" Linear 0.0 0.0
+    Animate PlayerStatusHealthValueHugeBlur            Alpha       "0" Linear 0.0 0.0
+
+    Animate PlayerStatusHealthValueU1Blur              FgColor     "Health Normal"      Linear 0.0 0.0
+    Animate PlayerStatusHealthValueU1Blur              Alpha       "0"              Linear 0.0 0.0    
+
+    Animate PlayerStatusHealthValueU2Blur              FgColor     "Health Normal"      Linear 0.0 0.0
+    Animate PlayerStatusHealthValueU2Blur              Alpha       "0"              Linear 0.0 0.0    
+    
+    Animate PlayerStatusHealthValueU3Blur              FgColor     "Health Normal"      Linear 0.0 0.0
+    Animate PlayerStatusHealthValueU3Blur              Alpha       "0"              Linear 0.0 0.0    
+    
+    Animate PlayerStatusHealthValueU4Blur              FgColor     "Health Normal"      Linear 0.0 0.0
+    Animate PlayerStatusHealthValueU4Blur              Alpha       "0"              Linear 0.0 0.0    
+    
+    Animate PlayerStatusHealthValueD1Blur              FgColor     "Health Normal"      Linear 0.0 0.0
+    Animate PlayerStatusHealthValueD1Blur              Alpha       "0"              Linear 0.0 0.0    
+
+    Animate PlayerStatusHealthValueD2Blur              FgColor     "Health Normal"      Linear 0.0 0.0
+    Animate PlayerStatusHealthValueD2Blur              Alpha       "0"              Linear 0.0 0.0    
+    
+    Animate PlayerStatusHealthValueD3Blur              FgColor     "Health Normal"      Linear 0.0 0.0
+    Animate PlayerStatusHealthValueD3Blur              Alpha       "0"              Linear 0.0 0.0    
+    
+    Animate PlayerStatusHealthValueD4Blur              FgColor     "Health Normal"      Linear 0.0 0.0
+    Animate PlayerStatusHealthValueD4Blur              Alpha       "0"              Linear 0.0 0.0
+
+    
+    //RETURN TO NORMAL HEALTH
     Animate PlayerStatusHealthValueSpectator   FgColor "Health Normal" Linear 0.0 0.0
     Animate PlayerStatusHealthValueTargetID    FgColor "Health Normal" Linear 0.0 0.0
+    
+    Animate PlayerStatusHealthValueTargetIDD1            FgColor     "Health Buff Blur"      Linear 0.0 0.0
+    Animate PlayerStatusHealthValueTargetIDD1            Alpha       "0"                     Linear 0.0 0.0
+    Animate PlayerStatusHealthValueTargetIDD2            FgColor     "Health Buff Blur"      Linear 0.0 0.0
+    Animate PlayerStatusHealthValueTargetIDD2            Alpha       "0"                     Linear 0.0 0.0
+    Animate PlayerStatusHealthValueTargetIDU1            FgColor     "Health Buff Blur"      Linear 0.0 0.0
+    Animate PlayerStatusHealthValueTargetIDU1            Alpha       "0"                     Linear 0.0 0.0
+    Animate PlayerStatusHealthValueTargetIDU2            FgColor     "Health Buff Blur"      Linear 0.0 0.0
+    Animate PlayerStatusHealthValueTargetIDU2            Alpha       "0"                     Linear 0.0 0.0
+    
+    Animate PlayerStatusHealthValueTargetIDBlur            FgColor "Black" Linear 0.0 0.0
+    Animate PlayerStatusHealthValueTargetIDBlur            Alpha             "255" Linear 0.0 0.0
+
+    
 }
 
 //===========================================
@@ -501,7 +623,7 @@ event HudHealthDyingPulse
     Animate PlayerStatusHealthBonusImage       Alpha       "0"     Linear 0.0 0.002
     Animate PlayerStatusHealthBonusImage       Alpha       "0"           Linear 0.006 0.30
     
-    //the default health color and size and blurs disappears when at low health
+    //REMOVE SHADOWS AND NORMAL HEALTH
     Animate PlayerStatusHealthValue                FgColor "Health Normal" Linear 0.0 0.0
     Animate PlayerStatusHealthValue                Alpha       "0" Linear 0.0 0.0
     
@@ -532,62 +654,89 @@ event HudHealthDyingPulse
     Animate PlayerStatusHealthValueBlurDR          FgColor "Black" Linear 0.0 0.0
     Animate PlayerStatusHealthValueBlurDR          Alpha       "0" Linear 0.0 0.0
     
-    //and are replaced by the huge font and scanlines
-    Animate PlayerStatusHealthValueHuge            FgColor "0 0 0 0" Linear 0.0 0.0
+    //BEGIN HEALTH SHAKE
+    Animate PlayerStatusHealthValueHuge            FgColor "Health Hurt" Linear 0.0 0.0
     Animate PlayerStatusHealthValueHuge            Alpha       "0" Linear 0.0 0.0
     
-    Animate PlayerStatusHealthValueHugeL            FgColor "255 180 20 255" Linear 0.0 0.0
-    Animate PlayerStatusHealthValueHugeL            Alpha       "255" Linear 0.0 0.0
-    Animate PlayerStatusHealthValueHugeL            FgColor "0 0 0 0" Linear 0.05 0.0
-    Animate PlayerStatusHealthValueHugeL           Alpha       "0" Linear 0.05 0.0
+    Animate PlayerStatusHealthValueHugeL           FgColor "Health Hurt" Linear 0.0 0.0
+    Animate PlayerStatusHealthValueHugeL           Alpha           "255" Linear 0.0 0.0
+    Animate PlayerStatusHealthValueHugeL           FgColor "Health Hurt" Linear 0.05 0.0
+    Animate PlayerStatusHealthValueHugeL           Alpha             "0" Linear 0.05 0.0
     
-    Animate PlayerStatusHealthValueHuge            FgColor "255 180 20 255" Linear 0.05 0.0
-    Animate PlayerStatusHealthValueHuge            Alpha       "255" Linear 0.05 0.0
-    Animate PlayerStatusHealthValueHuge            FgColor "0 0 0 0" Linear 0.1 0.0
-    Animate PlayerStatusHealthValueHuge           Alpha       "0" Linear 0.1 0.0
+    Animate PlayerStatusHealthValueHuge            FgColor "Health Hurt" Linear 0.05 0.0
+    Animate PlayerStatusHealthValueHuge            Alpha           "255" Linear 0.05 0.0
+    Animate PlayerStatusHealthValueHuge            FgColor "Health Hurt" Linear 0.1 0.0
+    Animate PlayerStatusHealthValueHuge            Alpha             "0" Linear 0.1 0.0
 
     
-    Animate PlayerStatusHealthValueHugeR          FgColor "255 180 20 255" Linear 0.1 0.0
-    Animate PlayerStatusHealthValueHugeR            Alpha       "255" Linear 0.1 0.0
-    Animate PlayerStatusHealthValueHugeR           FgColor "0 0 0 0" Linear 0.15 0.0
-    Animate PlayerStatusHealthValueHugeR            Alpha       "0" Linear 0.15 0.0
+    Animate PlayerStatusHealthValueHugeR           FgColor "Health Hurt" Linear 0.1 0.0
+    Animate PlayerStatusHealthValueHugeR           Alpha           "255" Linear 0.1 0.0
+    Animate PlayerStatusHealthValueHugeR           FgColor "Health Hurt" Linear 0.15 0.0
+    Animate PlayerStatusHealthValueHugeR           Alpha             "0" Linear 0.15 0.0
     
-    Animate PlayerStatusHealthValueHuge            FgColor "255 180 20 255" Linear 0.15 0.0
-    Animate PlayerStatusHealthValueHuge            Alpha       "255" Linear 0.15 0.0
-    Animate PlayerStatusHealthValueHuge            FgColor "0 0 0 0" Linear 0.2 0.0
-    Animate PlayerStatusHealthValueHuge            Alpha       "0" Linear 0.2 0.0
+    Animate PlayerStatusHealthValueHuge            FgColor "Health Hurt" Linear 0.15 0.0
+    Animate PlayerStatusHealthValueHuge            Alpha           "255" Linear 0.15 0.0
+    Animate PlayerStatusHealthValueHuge            FgColor "Health Hurt" Linear 0.2 0.0
+    Animate PlayerStatusHealthValueHuge            Alpha             "0" Linear 0.2 0.0
     
-    //the scanlines
-    Animate PlayerStatusHealthValueHugeScanlines            FgColor "255 50 0 255" Linear 0.0 0.0
+    //BEGIN BLUR ROTATE
+    Animate PlayerStatusHealthValueHugeScanlines            FgColor "Health Hurt Blur" Linear 0.0 0.0
     Animate PlayerStatusHealthValueHugeScanlines            Alpha       "255" Linear 0.0 0.0
 
-    Animate PlayerStatusHealthValueHugeScanlinesDL            FgColor "0 0 0 0" Linear 0.0 0.0
+    Animate PlayerStatusHealthValueHugeScanlinesDL            FgColor "Health Hurt Blur" Linear 0.0 0.0
     Animate PlayerStatusHealthValueHugeScanlinesDL            Alpha       "0" Linear 0.0 0.0//loop
     
-    Animate PlayerStatusHealthValueHugeScanlinesUL            FgColor "255 50 15 255" Linear 0.0 0.0
+    Animate PlayerStatusHealthValueHugeScanlinesUL            FgColor "Health Hurt Blur" Linear 0.0 0.0
     Animate PlayerStatusHealthValueHugeScanlinesUL            Alpha       "255" Linear 0.0 0.0
-    Animate PlayerStatusHealthValueHugeScanlinesUL            FgColor "0 0 0 0" Linear 0.05 0.0
+    Animate PlayerStatusHealthValueHugeScanlinesUL            FgColor "Health Hurt Blur" Linear 0.05 0.0
     Animate PlayerStatusHealthValueHugeScanlinesUL            Alpha       "0" Linear 0.05 0.0
     
-    Animate PlayerStatusHealthValueHugeScanlinesUR            FgColor "255 50 15 255" Linear 0.05 0.0
+    Animate PlayerStatusHealthValueHugeScanlinesUR            FgColor "Health Hurt Blur" Linear 0.05 0.0
     Animate PlayerStatusHealthValueHugeScanlinesUR            Alpha       "255" Linear 0.05 0.0
-    Animate PlayerStatusHealthValueHugeScanlinesUR            FgColor "0 0 0 0" Linear 0.1 0.0
+    Animate PlayerStatusHealthValueHugeScanlinesUR            FgColor "Health Hurt Blur" Linear 0.1 0.0
     Animate PlayerStatusHealthValueHugeScanlinesUR            Alpha       "0" Linear 0.1 0.0
 
-    Animate PlayerStatusHealthValueHugeScanlinesDR            FgColor "255 50 15 255" Linear 0.1 0.0
+    Animate PlayerStatusHealthValueHugeScanlinesDR            FgColor "Health Hurt Blur" Linear 0.1 0.0
     Animate PlayerStatusHealthValueHugeScanlinesDR            Alpha       "255" Linear 0.1 0.0
-    Animate PlayerStatusHealthValueHugeScanlinesDR            FgColor "0 0 0 0" Linear 0.15 0.0
+    Animate PlayerStatusHealthValueHugeScanlinesDR            FgColor "Health Hurt Blur" Linear 0.15 0.0
     Animate PlayerStatusHealthValueHugeScanlinesDR            Alpha       "0" Linear 0.15 0.0
     
-    Animate PlayerStatusHealthValueHugeScanlinesDL            FgColor "255 50 15 255" Linear 0.15 0.0
+    Animate PlayerStatusHealthValueHugeScanlinesDL            FgColor "Health Hurt Blur" Linear 0.15 0.0
     Animate PlayerStatusHealthValueHugeScanlinesDL            Alpha       "255" Linear 0.15 0.0
-    Animate PlayerStatusHealthValueHugeScanlinesDL            FgColor "0 0 0 0" Linear 0.2 0.0
+    Animate PlayerStatusHealthValueHugeScanlinesDL            FgColor "Health Hurt Blur" Linear 0.2 0.0
     Animate PlayerStatusHealthValueHugeScanlinesDL            Alpha       "0" Linear 0.2 0.0
 
+    //BEGIN TARGETID SHAKE
     Animate PlayerStatusHealthValueSpectator   FgColor "Health Hurt"     Linear 0.0 0.0
-    Animate PlayerStatusHealthValueSpectator   FgColor "Health Hurt2"     Linear 0.035 0.0
-    Animate PlayerStatusHealthValueTargetID    FgColor "Health Hurt"     Linear 0.0 0.0
-    Animate PlayerStatusHealthValueTargetID    FgColor "Health Hurt2"     Linear 0.035 0.0
+    
+    Animate PlayerStatusHealthValueTargetID            FgColor "Health Hurt" Linear 0.0 0.0
+    Animate PlayerStatusHealthValueTargetID            Alpha             "0" Linear 0.0 0.0
+    
+    Animate PlayerStatusHealthValueTargetIDBlur            FgColor "Health Hurt Blur" Linear 0.0 0.0
+    Animate PlayerStatusHealthValueTargetIDBlur            Alpha             "255" Linear 0.0 0.0
+
+    
+    Animate PlayerStatusHealthValueTargetIDL           FgColor "Health Hurt" Linear 0.0 0.0
+    Animate PlayerStatusHealthValueTargetIDL           Alpha           "255" Linear 0.0 0.0
+    Animate PlayerStatusHealthValueTargetIDL           FgColor "Health Hurt" Linear 0.05 0.0
+    Animate PlayerStatusHealthValueTargetIDL           Alpha             "0" Linear 0.05 0.0
+    
+    Animate PlayerStatusHealthValueTargetID            FgColor "Health Hurt" Linear 0.05 0.0
+    Animate PlayerStatusHealthValueTargetID            Alpha           "255" Linear 0.05 0.0
+    Animate PlayerStatusHealthValueTargetID            FgColor "Health Hurt" Linear 0.1 0.0
+    Animate PlayerStatusHealthValueTargetID            Alpha             "0" Linear 0.1 0.0
+    
+    Animate PlayerStatusHealthValueTargetIDR           FgColor "Health Hurt" Linear 0.1 0.0
+    Animate PlayerStatusHealthValueTargetIDR           Alpha           "255" Linear 0.1 0.0
+    Animate PlayerStatusHealthValueTargetIDR           FgColor "Health Hurt" Linear 0.15 0.0
+    Animate PlayerStatusHealthValueTargetIDR           Alpha             "0" Linear 0.15 0.0
+    
+    Animate PlayerStatusHealthValueTargetID            FgColor "Health Hurt" Linear 0.15 0.0
+    Animate PlayerStatusHealthValueTargetID            Alpha           "255" Linear 0.15 0.0
+    Animate PlayerStatusHealthValueTargetID            FgColor "Health Hurt" Linear 0.2 0.0
+    Animate PlayerStatusHealthValueTargetID            Alpha             "0" Linear 0.2 0.0
+    
+    
   
     RunEvent HudHealthDyingPulseLoop    0.2
 }
@@ -645,32 +794,32 @@ event HudHealthDyingPulseStop
     Animate PlayerStatusHealthValueHuge            Alpha       "0" Linear 0.035 0.0
     
     Animate PlayerStatusHealthValueHugeScanlines            FgColor "Health Normal" Linear 0.0 0.0
-    Animate PlayerStatusHealthValueHugeScanlines            FgColor "Health Normal" Linear 0.035 0.0
     Animate PlayerStatusHealthValueHugeScanlines            Alpha       "0" Linear 0.0 0.0
-    Animate PlayerStatusHealthValueHugeScanlines            Alpha       "0" Linear 0.035 0.0
     
     Animate PlayerStatusHealthValueHugeScanlinesUL            FgColor "Health Normal" Linear 0.0 0.0
-    Animate PlayerStatusHealthValueHugeScanlinesUL            Alpha       "255" Linear 0.0 0.0
-    Animate PlayerStatusHealthValueHugeScanlinesUL            FgColor "Health Normal" Linear 0.035 0.0
-    Animate PlayerStatusHealthValueHugeScanlinesUL            Alpha       "0" Linear 0.035 0.0
+    Animate PlayerStatusHealthValueHugeScanlinesUL            Alpha       "0" Linear 0.0 0.0
     
-    Animate PlayerStatusHealthValueHugeScanlinesUR            FgColor "Health Normal" Linear 0.035 0.0
-    Animate PlayerStatusHealthValueHugeScanlinesUR            Alpha       "0" Linear 0.035 0.0
-    Animate PlayerStatusHealthValueHugeScanlinesUR            FgColor "Health Normal" Linear 0.07 0.0
-    Animate PlayerStatusHealthValueHugeScanlinesUR            Alpha       "0" Linear 0.07 0.0
+    Animate PlayerStatusHealthValueHugeScanlinesUR            FgColor "Health Normal" Linear 0.0 0.0
+    Animate PlayerStatusHealthValueHugeScanlinesUR            Alpha       "0" Linear 0.0 0.0
 
-    Animate PlayerStatusHealthValueHugeScanlinesDR            FgColor "Health Normal" Linear 0.07 0.0
-    Animate PlayerStatusHealthValueHugeScanlinesDR            Alpha       "0" Linear 0.07 0.0
-    Animate PlayerStatusHealthValueHugeScanlinesDR            FgColor "Health Normal" Linear 0.105 0.0
-    Animate PlayerStatusHealthValueHugeScanlinesDR            Alpha       "0" Linear 0.105 0.0
+    Animate PlayerStatusHealthValueHugeScanlinesDR            FgColor "Health Normal" Linear 0.0 0.0
+    Animate PlayerStatusHealthValueHugeScanlinesDR            Alpha       "0" Linear 0.0 0.0
     
-    Animate PlayerStatusHealthValueHugeScanlinesDL            FgColor "Health Normal" Linear 0.105 0.0
-    Animate PlayerStatusHealthValueHugeScanlinesDL            Alpha       "0" Linear 0.105 0.0
-    Animate PlayerStatusHealthValueHugeScanlinesDL            FgColor "Health Normal" Linear 0.140 0.0
-    Animate PlayerStatusHealthValueHugeScanlinesDL            Alpha       "0" Linear 0.140 0.0
+    Animate PlayerStatusHealthValueHugeScanlinesDL            FgColor "Health Normal" Linear 0.0 0.0
+    Animate PlayerStatusHealthValueHugeScanlinesDL            Alpha       "0" Linear 0.0 0.0
     
     Animate PlayerStatusHealthValueSpectator   FgColor "Health Normal" Linear 0.0 0.0
-    Animate PlayerStatusHealthValueTargetID    FgColor "Health Normal" Linear 0.0 0.0
+    Animate PlayerStatusHealthValueTargetID            FgColor "Health Normal" Linear 0.0 0.0
+    Animate PlayerStatusHealthValueTargetID            Alpha             "255" Linear 0.0 0.0
+    Animate PlayerStatusHealthValueTargetIDL            FgColor "Health Normal" Linear 0.0 0.0
+    Animate PlayerStatusHealthValueTargetIDL            Alpha             "0" Linear 0.0 0.0
+    Animate PlayerStatusHealthValueTargetIDR            FgColor "Health Normal" Linear 0.0 0.0
+    Animate PlayerStatusHealthValueTargetIDR           Alpha             "0" Linear 0.0 0.0
+    
+    Animate PlayerStatusHealthValueTargetIDBlur            FgColor "Black" Linear 0.0 0.0
+    Animate PlayerStatusHealthValueTargetIDBlur            Alpha             "255" Linear 0.0 0.0
+
+
 
 
 }
@@ -918,7 +1067,6 @@ event HudMedicChargedStop
     Animate ChargeMeter3            FgColor     "Uber Bar Color"       Linear 0.0 0.2
     Animate ChargeMeter4            FgColor     "Uber Bar Color"       Linear 0.0 0.2
 }
-
 //====================================
 
 event VideoCaptionFadeIn

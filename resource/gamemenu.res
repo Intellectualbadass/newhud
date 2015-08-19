@@ -23,9 +23,16 @@
     }
     "PlayPVEButton"
     {
-        "label" "MvM" 
+        "label" "" 
         "command" "playpve"
         "subimage" "glyph_coop"
+        "OnlyAtMenu" "1"
+    }
+    "PlayCompButton"
+    {
+        "label" "Comp" 
+        "command" "ladder_ui_show"
+        "subimage" ""
         "OnlyAtMenu" "1"
     }
     "ServerBrowserButton"

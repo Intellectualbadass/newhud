@@ -5,10 +5,10 @@
         "ControlName"       "CTFImagePanel"
         "fieldName"     "TargetIDBG"
         "xpos"          "0"
-        "ypos"          "10"
-        "zpos"          "-1"
+        "ypos"          "30"
+        "zpos"          "1"
         "wide"          "252"
-        "tall"          "55"
+        "tall"          "2"
         "autoResize"        "0"
         "pinCorner"     "0"
         "visible"       "1"
@@ -27,6 +27,7 @@
         "draw_corner_width"     "0"             // screen size of the corners ( and sides ), proportional
         "draw_corner_height"    "0" 
     }
+
     "TargetIDBG_Spec_Blue"
     {
         "ControlName"       "ScalableImagePanel"
@@ -95,7 +96,7 @@
         "font"          "HudFontSmallBold"
         "fgcolor_override"  "TanLight"
         "xpos"          "8"
-        "ypos"          "9"
+        "ypos"          "14"
         "zpos"          "1"
         "wide"          "640"
         "tall"          "18"
@@ -108,13 +109,14 @@
         "dulltext"      "0"
         "brighttext"        "0"
     }
+
     "TargetDataLabel"
     {   
         "ControlName"       "Label"
         "fieldName"     "TargetDataLabel"
-        "font"          "HudFontSmallest"
+        "font"          "HudFontSmallestBold"
         "xpos"          "0"
-        "ypos"          "24"    [$WIN32]        
+        "ypos"          "0"    [$WIN32]        
         "zpos"          "1"
         "wide"          "280"
         "tall"          "8"
@@ -150,7 +152,7 @@
         "ControlName"   "ImagePanel"
         "fieldName"     "AmmoIcon"
         "xpos"          "35"
-        "ypos"          "24"
+        "ypos"          "0"
         "zpos"          "12"
         "wide"          "8"
         "tall"          "8"
