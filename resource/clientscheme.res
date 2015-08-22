@@ -24,12 +24,14 @@ Scheme
         "Ammo In Clip Low"                      "192 56 63 255"
         "Ammo In Reserve Low"                   "192 56 63 255"
         
-        //The two is for the flicker for buff/hurt. Make the two you choose be close in color.
         "Health Normal"                         "235 226 202 255"
-        "Health Buff"                           "92 128 166 255"
-        "Health Buff Blur"                      "74 82 132 255"
+        "Health Buff"                           "92 175 115 255"
+        "Health Buff Blur"                      "74 132 82 255"
         "Health Hurt"                           "255 180 20 255"
         "Health Hurt Blur"                      "255 50 0 255"
+        
+        "Target Data"                           "255 220 20 255"
+        "Damage Crosshair"                      "255 180 20 255"
 
         
         "Uber Bar Color"                        "235 226 202 255"
@@ -38,8 +40,8 @@ Scheme
         "Uber Ready Panel"                      "46 43 42 255"
     
         "Heal Numbers"                          "100 200 100 255"
-        "Damage Numbers"                        "255 220 100 255"
-        "DamageAccount"                         "255 220 100 45"
+        "Damage Numbers"                        "255 180 20 255"
+        "DamageAccount"                         "255 180 20 255"
         "DamageAccountBG"                       "0 0 0 35"
         //end hud colors
         
@@ -1199,65 +1201,14 @@ Scheme
             }
         }
 
-        "Default"
+       "Default"
         {
             "1"
             {
-                "name"      "Verdana"
-                "tall"      "12"
-                "weight"    "900"
-                "range"     "0x0000 0x017F" //  Basic Latin, Latin-1 Supplement, Latin Extended-A
-                "yres"  "480 599"
-            }
-            "2"
-            {
-                "name"      "Verdana"
-                "tall"      "13"    [$WIN32]
-                "tall"      "20"    [$X360]
-                "weight"    "900"
-                "range"     "0x0000 0x017F" //  Basic Latin, Latin-1 Supplement, Latin Extended-A
-                "yres"  "600 767"
-            }
-            "3"
-            {
-                "name"      "Verdana"
-                "tall"      "14"
-                "weight"    "900"
-                "range"     "0x0000 0x017F" //  Basic Latin, Latin-1 Supplement, Latin Extended-A
-                "yres"  "768 1023"
+                "name"      "TF2 Build"
+                "tall"      "13"
                 "antialias" "1"
-            }
-            "4"
-            {
-                "name"      "Verdana"
-                "tall"      "20"
-                "weight"    "900"
                 "range"     "0x0000 0x017F" //  Basic Latin, Latin-1 Supplement, Latin Extended-A
-                "yres"  "1024 1199"
-                "antialias" "1"
-            }
-            "5"
-            {
-                "name"      "Verdana"
-                "tall"      "24"
-                "weight"    "900"
-                "range"     "0x0000 0x017F" //  Basic Latin, Latin-1 Supplement, Latin Extended-A
-                "yres"  "1200 6000"
-                "antialias" "1"
-            }
-            "6"
-            {
-                "name"      "Verdana"
-                "tall"      "12"
-                "range"         "0x0000 0x00FF"
-                "weight"        "900"
-            }
-            "7"
-            {
-                "name"      "Arial"
-                "tall"      "12"
-                "range"         "0x0000 0x00FF"
-                "weight"        "800"
             }
         }
         "DefaultUnderline"
@@ -1812,6 +1763,19 @@ Scheme
                 "antialias" "1"
             }
         }
+        "HudFontSmallBoldOutline"
+        {
+            "1"
+            {
+                "name"      "TF2 Build"
+                "tall"      "14"
+                "weight"    "500"
+                "additive"  "0"
+                "antialias" "1"
+                "outline"   "1"
+            }
+        }
+
         "HudFontSmallBoldScanlines"
         {
             "1"

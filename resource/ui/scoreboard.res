@@ -156,7 +156,7 @@
         "visible"       "1"
         "enabled"       "1"
         "fillcolor"     "0 0 0 255"
-        "alpha"         "127"
+        "alpha"         "200"
         
         if_mvm
         {
@@ -319,7 +319,7 @@
         "visible"       "1"
         "enabled"       "1"
         "fillcolor"     "0 0 0 255"
-        "alpha"         "127"
+        "alpha"         "200"
         
         if_mvm
         {

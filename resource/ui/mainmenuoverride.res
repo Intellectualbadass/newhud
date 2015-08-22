@@ -69,14 +69,14 @@
         "tall" "50"
         "visible" "1"
         "PaintBackgroundType" "0"
-        "bgcolor_override" "TanDarker"
+        "bgcolor_override" "30 30 30 255"
         "VersionNumber"
         {
             "ControlName"   "CExLabel"
             "fieldName" "VersionNumber"
             "font"  "HudFontSmallBold"
             "fgcolor_override"   "TanLight"
-            "labelText" "vb6 - we have a name"
+            "labelText" "vb7 - hrhr"
             "textAlignment" "west"
             "xpos"  "20"
             "ypos"  "0"
@@ -93,7 +93,7 @@
             "fieldName" "LastUpdate"
             "font"  "HudFontSmallestBold"
             "fgcolor_override"   "TanLight"
-            "labelText" "Aug 18"
+            "labelText" "August 19"
             "textAlignment" "west"
             "xpos"  "20"
             "ypos"  "10"
@@ -395,7 +395,7 @@
         "tall"          "480"
         "visible"       "0"
         "enabled"       "1"
-        "image"         ""
+        "image"         "../console/title_war"
         "scaleImage"    "1"
         
         if_halloween_0
@@ -430,6 +430,7 @@
         {
             "image"     "../console/title_summer_operation_2015"
         }
+        
     }
                     
     "TFLogoImage"
@@ -2280,11 +2281,11 @@
     {
         "ControlName"   "EditablePanel"
         "fieldname"     "PlayPVEButton"
-        "xpos"          "c-22"
-        "ypos"          "3"
+        "xpos"          "c-30"
+        "ypos"          "7"
         "zpos"          "12"
-        "wide"          "18"
-        "tall"          "18"
+        "wide"          "24"
+        "tall"          "24"
         "visible"       "1"
         "PaintBackgroundType"   "0"
 
@@ -2299,8 +2300,8 @@
             "fieldName"     "SubButton"
             "xpos"          "0"
             "ypos"          "0"
-            "wide"          "18"
-            "tall"          "18"
+            "wide"          "24"
+            "tall"          "24"
             "autoResize"    "0"
             "pinCorner"     "3"
             "visible"       "1"
@@ -2331,11 +2332,11 @@
             {
                 "ControlName"   "ImagePanel"
                 "fieldName"     "SubImage"
-                "xpos"          "3"
-                "ypos"          "3"
+                "xpos"          "4"
+                "ypos"          "4"
                 "zpos"          "1"
-                "wide"          "12"
-                "tall"          "12"
+                "wide"          "16"
+                "tall"          "16"
                 "visible"       "1"
                 "enabled"       "1"
                 "image"         "glyph_coop"

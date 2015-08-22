@@ -519,16 +519,16 @@
         "CornerRadius"    "3"
         "RightJustify"    "1"   // If 1, draw notices from the right
         
-        "TextFont"      "Default"
+        "TextFont"      "HudFontSmallestBold"
         
         "TeamBlue"      "HUDBlueTeamSolid"
         "TeamRed"       "HUDRedTeamSolid"
         "IconColor"     "HudWhite"
         "LocalPlayerColor"  "HUDBlack"
 
-        "BaseBackgroundColor"   "TanDarker"      [$WIN32]
+        "BaseBackgroundColor"   "42 47 55 240"      [$WIN32]
         "LocalBackgroundColor"  "TanLight"   [$WIN32]
-        "BaseBackgroundColor"   "TanDarker"      [$X360]
+        "BaseBackgroundColor"   "42 47 55 240"      [$X360]
         "LocalBackgroundColor"  "0 0 0 255"     [$X360]
     }
 
