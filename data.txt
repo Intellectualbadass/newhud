@@ -1,9 +1,9 @@
 name=MANNterface
-desc=
+desc=The latest in eye-numbers technology!
 creator=Mann Co. Eggheads
 steamid=76561198042111402
 url=
 url=
 url=
-version=beta
-update_url=
+version=-7
+update_url=https://github.com/Intellectualbadass/newhud/archive/master.zip

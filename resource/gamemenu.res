@@ -14,6 +14,10 @@
         "subimage" "glyph_multiplayer"
         "OnlyAtMenu" "1"
     }
+    "MannterfaceLogoImage"
+    {
+        "OnlyAtMenu" "1"
+    }
     "QuickplayChangeButton"
     {
         "label" "#MMenu_NewGame" 

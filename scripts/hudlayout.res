@@ -1,46 +1,5 @@
 "Resource/HudLayout.res"
 {
-    BasicDot
-    {
-        "controlName"   "CExLabel"
-        "fieldName"     "BasicDot"
-        "visible"       "1"
-        "enabled"       "1"
-        "zpos"          "-2"
-
-        "xpos"          "c-107"
-        "ypos"          "c-103"
-        "wide"          "207"
-        "tall"          "207"
-
-        //"font"        "CrosshairsOutline20"
-        "font"          "Crosshairs32"
-        "labelText"     "3"
-        "textAlignment" "center"    
-        
-        "fgcolor"       "25 25 25 255"
-    }
-    BasicDotOut
-    {
-        "controlName"   "CExLabel"
-        "fieldName"     "BasicDotOut"
-        "visible"       "1"
-        "enabled"       "1"
-        "zpos"          "-2"
-
-        "xpos"          "c-107"
-        "ypos"          "c-103"
-        "wide"          "207"
-        "tall"          "207"
-
-        //"font"        "CrosshairsOutline20"
-        "font"          "Crosshairs32"
-        "labelText"     "3"
-        "textAlignment" "center"    
-        
-        "fgcolor"       "0 0 0 0"
-    }
-
    "TransparentViewmodelMask"
     {
         //alpha doesn't work for this, you need to change the texture's alpha
@@ -109,12 +68,10 @@
         "fieldName"     "HudItemEffectMeter"
         "visible"       "1"
         "enabled"       "1"
-        "xpos"          "r162"  [$WIN32]
-        "ypos"          "r52"   [$WIN32]
-        "xpos"          "r194"  [$X360]
-        "ypos"          "r74"   [$X360]
-        "wide"          "100"
-        "tall"          "50"
+        "xpos" "c-20" // CUM
+        "ypos" "c10"
+        "wide" "f0"
+        "tall" "480"
         "MeterFG"       "White"
         "MeterBG"       "Gray"
     }
@@ -135,16 +92,14 @@
         "fieldName"     "HudDemomanCharge"
         "visible"       "1"
         "enabled"       "1"
-        "xpos"          "r80"   [$WIN32]
-        "ypos"          "r21"   [$WIN32]
-        "xpos"          "r112"  [$X360]
-        "ypos"          "r45"   [$X360]
-        "zpos"          "1"         // draw in front of ammo
-        "wide"          "60"
-        "tall"          "8"
+        "zpos"          "1"
+        "xpos"          "c-15" // 1 BPM
+        "ypos"          "c20" // 2 BPM
+        "wide"          "30" // 5 BPM
+        "tall"          "5" // 6 BPM
         "MeterFG"       "White"
         "MeterBG"       "Gray"
-    }   
+    }     
 
     HudBowCharge
     {
@@ -234,15 +189,12 @@
     CHudAccountPanel
     {
         "fieldName"             "CHudAccountPanel"
-        "xpos"                  "r162"  [$WIN32]
-        "ypos"                  "r152"  [$WIN32]
-        "xpos"                  "r194"  [$X360]
-        "ypos"                  "r174"  [$X360]
-        "wide"                  "116"
-        "tall"                  "180"
-        "visible"               "1"
-        "enabled"               "1"
-        "PaintBackgroundType"   "2"
+        "visible" "1"
+        "enabled" "1"
+        "xpos" "c-20" // CUM
+        "ypos" "c10"
+        "wide" "f0"
+        "tall" "480"
     }
     
     CHealthAccountPanel
@@ -882,10 +834,10 @@
         "fieldName"             "WinPanel"
         "visible"               "1"
         "enabled"               "1"
-        "xpos"                  "c-150"
-        "ypos"                  "215"
-        "wide"                  "300"
-        "tall"                  "300"
+        "xpos"                  "0"
+        "ypos"                  "0"
+        "wide"                  "f0"
+        "tall"                  "480"
     }
 
     ArenaWinPanel
@@ -893,23 +845,12 @@
         "fieldName"             "ArenaWinPanel"
         "visible"               "1"
         "enabled"               "1"
-        "xpos"                  "c-225"
-        "ypos"                  "250"
-        "wide"                  "450"
-        "tall"                  "218"
+        "xpos"                  "0"
+        "ypos"                  "0"
+        "wide"                  "f0"
+        "tall"                  "480"
     }
     
-    PVEWinPanel
-    {
-        "fieldName"             "PVEWinPanel"
-        "visible"               "1"
-        "enabled"               "1"
-        "xpos"                  "c-150"
-        "ypos"                  "255"
-        "wide"                  "300"
-        "tall"                  "215"
-    }
-
     StatPanel
     {
         "fieldName"             "StatPanel"
@@ -925,6 +866,17 @@
         "tall_lodef"            "190"
     }
     
+    PVEWinPanel
+    {
+        "fieldName"             "PVEWinPanel"
+        "visible"               "1"
+        "enabled"               "1"
+        "xpos"                  "c-150"
+        "ypos"                  "255"
+        "wide"                  "300"
+        "tall"                  "215"
+    }
+
     FreezePanel
     {
         "fieldName"             "FreezePanel"
@@ -1055,13 +1007,14 @@
         "fieldName"     "HudDemomanPipes"
         "visible"       "1"
         "enabled"       "1"
-        "xpos"          "r162"  [$WIN32]
-        "ypos"          "r52"   [$WIN32]
-        "xpos"          "r194"  [$X360]
-        "ypos"          "r74"   [$X360]
-        "wide"          "100"
-        "tall"          "50"
-    }    
+        "zpos"          "1"
+        "xpos"          "0"
+        "ypos"          "0"
+        "wide"          "f0"
+        "tall"          "480"
+        "MeterFG"       "White"
+        "MeterBG"       "Gray"
+    }     
 
     HudTeamGoal
     {
