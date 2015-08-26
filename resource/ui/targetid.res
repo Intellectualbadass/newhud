@@ -114,7 +114,7 @@
     {   
         "ControlName"       "Label"
         "fieldName"     "TargetDataLabel"
-        "font"          "HudFontSmallestBold"
+        "font"          "HudFontSmallestBoldOutline"
         "xpos"          "0"
         "ypos"          "0"    [$WIN32]        
         "zpos"          "1"

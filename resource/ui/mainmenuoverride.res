@@ -76,7 +76,7 @@
             "fieldName" "VersionNumber"
             "font"  "HudFontSmallBold"
             "fgcolor_override"   "TanLight"
-            "labelText" "rc1"
+            "labelText" "rc2"
             "textAlignment" "west"
             "xpos"  "20"
             "ypos"  "0"

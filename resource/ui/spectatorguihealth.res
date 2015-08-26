@@ -134,22 +134,6 @@
         "font"              "HudFontSmallBold"  
         "fgcolor_override"  "0 0 0 0"
     }
-    "PlayerStatusHealthValueTargetIDU2"
-    {
-        "ControlName"   "Label"
-        "fieldName"     "PlayerStatusHealthValueTargetIDU2"
-        "xpos"          "0"
-        "ypos"          "8"
-        "zpos"          "20"
-        "wide"          "28"
-        "tall"          "22"
-        "visible"       "1"
-        "enabled"       "1"
-        "textAlignment" "center"    
-        "labeltext"     "%Health%"
-        "font"              "HudFontSmallBold"  
-        "fgcolor_override"  "0 0 0 0"
-    }
     "PlayerStatusHealthValueTargetIDD1"
     {
         "ControlName"   "Label"
@@ -166,12 +150,13 @@
         "font"              "HudFontSmallBold"  
         "fgcolor_override"  "0 0 0 0"
     }
-    "PlayerStatusHealthValueTargetIDD2"
+    //high health blur bounce
+    "PlayerStatusHealthValueTargetIDU1Blur"
     {
         "ControlName"   "Label"
-        "fieldName"     "PlayerStatusHealthValueTargetIDD2"
+        "fieldName"     "PlayerStatusHealthValueTargetIDU1Blur"
         "xpos"          "0"
-        "ypos"          "12"
+        "ypos"          "9"
         "zpos"          "20"
         "wide"          "28"
         "tall"          "22"
@@ -179,9 +164,26 @@
         "enabled"       "1"
         "textAlignment" "center"    
         "labeltext"     "%Health%"
-        "font"              "HudFontSmallBold"  
+        "font"              "HudFontSmallBoldBlur"  
         "fgcolor_override"  "0 0 0 0"
     }
+    "PlayerStatusHealthValueTargetIDD1Blur"
+    {
+        "ControlName"   "Label"
+        "fieldName"     "PlayerStatusHealthValueTargetIDD1Blur"
+        "xpos"          "0"
+        "ypos"          "11"
+        "zpos"          "20"
+        "wide"          "28"
+        "tall"          "22"
+        "visible"       "1"
+        "enabled"       "1"
+        "textAlignment" "center"    
+        "labeltext"     "%Health%"
+        "font"              "HudFontSmallBoldBlur"  
+        "fgcolor_override"  "0 0 0 0"
+    }
+
 
 
     //layers
