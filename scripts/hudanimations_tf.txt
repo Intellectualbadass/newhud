@@ -1,3 +1,9 @@
+event DamagedPlayer
+{   
+    Animate KnucklesCrosshair FgColor "Damage Crosshair" Linear 0.0 0.1
+    Animate KnucklesCrosshair FgColor "255 255 255 255" Linear 0.2 0.200001
+}
+
 event LevelInit
 {
 }
@@ -1390,12 +1396,6 @@ event NotificationsPresentBlinkStop
 }
 
 //===========================================
-
-event DamagedPlayer
-{   
-    Animate BasicDotOut FgColor "Damage Crosshair" Linear 0.0 0.1
-    Animate BasicDotOut FgColor "0 0 0 0" Linear 0.2 0.200001
-}
 
 //===========================================
 

@@ -1,5 +1,21 @@
 "Resource/HudLayout.res"
 {
+    "KnucklesCrosshair"
+    {
+            "controlName"                                   "CExLabel"
+            "fieldName"                                     "KnucklesCrosshair"
+            "visible"                                       "1"
+            "enabled"                                       "1"
+            "zpos"                                          "1"
+            "xpos"                                          "c-25"
+            "ypos"                                          "c-25"
+            "wide"                                          "50"
+            "tall"                                          "50"
+            "font"                                          "size:30,outline:off"
+            "labelText"                                     "6"
+            "textAlignment"                                 "center"
+            "fgcolor"                                       "255 255 255 255"
+    }
    "TransparentViewmodelMask"
     {
         //alpha doesn't work for this, you need to change the texture's alpha
