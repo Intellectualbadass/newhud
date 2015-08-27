@@ -26,7 +26,7 @@ Scheme
         
         "Health Normal"                         "235 226 202 255"
         "Health Buff"                           "92 175 115 255"
-        "Health Buff Blur"                      "74 132 82 255"
+        "Health Buff Blur"                      "0 128 0 175"
         "Health Hurt"                           "255 180 20 255"
         "Health Hurt Blur"                      "255 50 0 255"
         
@@ -1616,6 +1616,19 @@ Scheme
                 "antialias" "1"
             }
         }
+        "HudFontSmallestBoldBlur"
+        {
+            "1"
+            {
+                "name"      "TF2 Build"
+                "tall"      "11"
+                "weight"    "500"
+                "additive"  "0"
+                "antialias" "1"
+                "blur"      "1"
+            }
+        }
+
         "HudFontSmallestBoldOutline"
         {
             "1"
@@ -3216,7 +3229,80 @@ Scheme
         //////////////////// ECON FONTS //////////////////////////////
         //
         
-                "size:10,outline:off"
+        "MannCoFont"
+        {
+            "1"
+            {
+                "name"  "BorisBlackBloxx"
+                "tall"  "14"
+                "antialias" "1"
+                "additive"  "0"
+                "outline"   "0"
+            }
+        }
+        "MannCoFontBlur"
+        {
+            "1"
+            {
+                "name"  "BorisBlackBloxx"
+                "tall"  "14"
+                "antialias" "1"
+                "additive"  "0"
+                "outline"   "0"
+                "blur"      "1"
+            }
+        }
+        "MannCoFontSmall"
+        {
+            "1"
+            {
+                "name"  "Bebas"
+                "tall"  "6"
+                "antialias" "1"
+                "additive"  "0"
+                "outline"   "0"
+            }
+        }
+        "MannCoFontBlurSmall"
+        {
+            "1"
+            {
+                "name"  "Bebas"
+                "tall"  "6"
+                "antialias" "1"
+                "additive"  "0"
+                "outline"   "0"
+                "blur"      "1"
+            }
+        }
+        "MannCoFontBlurSmall"
+        {
+            "1"
+            {
+                "name"  "Bebas"
+                "tall"  "6"
+                "antialias" "1"
+                "additive"  "0"
+                "outline"   "0"
+                "blur"      "1"
+            }
+        }
+        "Blocks48"
+        {
+            "1"
+            {
+                "name"  "Blocks"
+                "tall"  "48"
+                "antialias" "1"
+                "additive"  "0"
+                "outline"   "0"
+            }
+        }
+
+
+
+
+        "size:10,outline:off"
         {
             "1"
             {
@@ -3227,6 +3313,7 @@ Scheme
                 "outline"   "0"
             }
         }
+
         "size:11,outline:off"
         {
             "1"
@@ -6677,4 +6764,20 @@ Scheme
                 "font" "resource/fonts/KnucklesCrosses.ttf"
                 "name" "KnucklesCrosses"
         }
+        "12"
+        {
+            "font" "resource/fonts/BorisBlackBloxx.ttf"
+            "name" "BorisBlackBloxx"
+        }
+        "13"
+        {
+            "font" "resource/fonts/Bebas.ttf"
+            "name" "Bebas"
+        {
+        "14"
+        {
+            "font" "resource/fonts/Blocks.ttf"
+            "name" "Blocks"
+        {
+
 }

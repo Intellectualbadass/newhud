@@ -177,8 +177,8 @@
         "enabled"       "1"
         "tabPosition"   "0"
         "autoresize"    "3"
-        "linespacing"   "22"
-        "linespacing_minmode"   "11"
+        "linespacing"   "8"
+        "linespacing_minmode"   "22"
         "fgcolor"       "blue"
         "show_columns"  "0"
         
@@ -340,8 +340,8 @@
         "enabled"       "1"
         "tabPosition"   "0"
         "autoresize"    "3"
-        "linespacing"   "22"
-        "linespacing_minmode"   "11"
+        "linespacing"   "8"
+        "linespacing_minmode"   "22"
         "textcolor"     "red"
         "show_columns"  "0"
 

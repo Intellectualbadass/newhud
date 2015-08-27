@@ -1064,6 +1064,8 @@ event UberchargeBg
     Animate ChargeLabelScanlines Alpha       "0"             Linear 0.7 0.2
     
     Animate ChargeLabel             FgColor     "100 200 100 255"        Linear 1.0 0.0
+    Animate ChargeMeter             FgColor     "0 0 0 0"       Linear 1.2 0.0
+    Animate ChargeMeter             BgColor     "0 0 0 0"       Linear 1.2 0.0
 }
 
 event HudMedicChargedBlink

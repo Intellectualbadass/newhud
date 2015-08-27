@@ -50,7 +50,6 @@
                 "ControlName"       "CExLabel"
                 "fieldName"     "playername"
                 "font"          "ScoreboardSmall"
-                "font_minmode"  "TFFontSmall"
                 "xpos"          "24"
                 "ypos"          "2"
                 "zpos"          "5"
@@ -302,8 +301,6 @@
         "tall_hidef"        "30"
         "autoResize"        "0"
         "pinCorner"     "0"
-        "visible"       "1"
-        "visible_minmode"       "1"
         "enabled"       "1"
         "labelText"     "Spectating..."
         "textAlignment"     "east"
@@ -394,7 +391,6 @@
         "autoResize"        "0"
         "pinCorner"     "0"
         "visible"       "0" [$WIN32]
-        "visible_minmode"       "0"
         "visible"       "0" [$X360]
         "enabled"       "1"
         "labelText"     "#TF_Spectator_ChangeTeam"
@@ -419,7 +415,6 @@
         "autoResize"        "0"
         "pinCorner"     "0"
         "visible"       "0" [$WIN32]
-        "visible_minmode"       "0"
         "visible"       "0" [$X360]
         "enabled"       "1"
         "labelText"     "#TF_Spectator_ChangeTeam"
@@ -441,7 +436,6 @@
         "autoResize"        "0"
         "pinCorner"     "0"
         "visible"       "0" [$WIN32]
-        "visible_minmode"       "0"
         "visible"       "0" [$X360]
         "enabled"       "1"
         "labelText"     "#TF_Spectator_SwitchCamMode"
@@ -462,7 +456,6 @@
         "autoResize"        "0"
         "pinCorner"     "0"
         "visible"       "0" [$WIN32]
-        "visible_minmode"       "0"
         "visible"       "0" [$X360]
         "enabled"       "1"
         "labelText"     "#TF_Spectator_ClassOrTeamKey"
@@ -483,7 +476,6 @@
         "autoResize"        "0"
         "pinCorner"     "0"
         "visible"       "0" [$WIN32]
-        "visible_minmode"       "0"
         "visible"       "0" [$X360]
         "enabled"       "1"
         "labelText"     "#TF_Spectator_CycleTargetFwd"
@@ -504,7 +496,6 @@
         "autoResize"        "0"
         "pinCorner"     "0"
         "visible"       "0" [$WIN32]
-        "visible_minmode"       "0"
         "visible"       "0" [$X360]
         "enabled"       "1"
         "labelText"     "#TF_Spectator_ClassOrTeamKey"
@@ -525,7 +516,6 @@
         "autoResize"        "0"
         "pinCorner"     "0"
         "visible"       "0" [$WIN32]
-        "visible_minmode"       "0"
         "visible"       "0" [$X360]
         "enabled"       "1"
         "labelText"     "#TF_Spectator_CycleTargetRev"
@@ -551,7 +541,6 @@
         "autoResize"        "0"
         "pinCorner"     "0"
         "visible"       "0"
-        "visible_minmode"       "0"
         "enabled"       "1"
         "labelText"     "%tip%"
         "textAlignment"     "center"    [$WIN32]

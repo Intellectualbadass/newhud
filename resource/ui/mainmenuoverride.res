@@ -58,45 +58,95 @@
             "enabled"   "1"
         }
     }
-    "VersionPanel"
+    "TitlePanel"
     {
         "ControlName" "EditablePanel"
-        "fieldName" "VersionPanel"
-        "xpos" "0"
-        "ypos" "r441"
-        "zpos" "-1"
-        "wide" "200"
-        "tall" "50"
+        "fieldName" "TitlePanel"
+        "xpos" "42"
+        "ypos" "3"
+        "zpos" "5"
+        "wide" "100"
+        "tall" "35"
         "visible" "1"
         "PaintBackgroundType" "0"
-        "bgcolor_override" "30 30 30 255"
-        "VersionNumber"
+        "bgcolor_override" "TanLight"
+        "MannterfaceText"
         {
             "ControlName"   "CExLabel"
-            "fieldName" "VersionNumber"
-            "font"  "HudFontSmallBold"
-            "fgcolor_override"   "TanLight"
-            "labelText" "rc2"
-            "textAlignment" "west"
-            "xpos"  "20"
-            "ypos"  "0"
+            "fieldName" "MannterfaceText"
+            "font"  "MannCoFont"
+            "fgcolor_override"   "TanDark"
+            "labelText" "MANNTERFACE"
+            "textAlignment" "center"
+            "xpos"  "-50"
+            "ypos"  "3"
             "wide"  "200"
             "tall"  "30"
+            "zpos"  "15"
             "autoResize"    "0"
             "pinCorner" "0"
             "visible"   "1"
             "enabled"   "1"
         }
+        "TheText"
+        {
+            "ControlName"   "CExLabel"
+            "fieldName" "TheText"
+            "font"  "MannCoFontSmall"
+            "fgcolor_override"   "TanDark"
+            "labelText" "THE"
+            "textAlignment" "center"
+            "xpos"  "-50"
+            "ypos"  "-7"
+            "wide"  "200"
+            "tall"  "30"
+            "zpos"  "15"
+            "autoResize"    "0"
+            "pinCorner" "0"
+            "visible"   "1"
+            "enabled"   "1"
+        }
+        "SubtitleText"
+        {
+            "ControlName"   "CExLabel"
+            "fieldName" "SubtitleText"
+            "font"  "MannCoFontSmall"
+            "fgcolor_override"   "TanDark"
+            "labelText" "'FRAME IT IN YOUR GAME'"
+            "textAlignment" "center"
+            "xpos"  "-50"
+            "ypos"  "11"
+            "wide"  "200"
+            "tall"  "30"
+            "zpos"  "15"
+            "autoResize"    "0"
+            "pinCorner" "0"
+            "visible"   "1"
+            "enabled"   "1"
+        }
+    }
+    "VersionPanel"
+    {
+        "ControlName" "EditablePanel"
+        "fieldName" "VersionPanel"
+        "xpos" "770"
+        "ypos" "443"
+        "zpos" "5"
+        "wide" "125"
+        "tall" "50"
+        "visible" "1"
+        "PaintBackgroundType" "0"
+        "bgcolor_override" "0 0 0 0"
         "LastUpdate"
         {
             "ControlName"   "CExLabel"
             "fieldName" "LastUpdate"
             "font"  "HudFontSmallestBold"
             "fgcolor_override"   "TanLight"
-            "labelText" "August 25"
+            "labelText" "15.08.26.RC1"
             "textAlignment" "west"
             "xpos"  "20"
-            "ypos"  "10"
+            "ypos"  "5"
             "wide"  "200"
             "tall"  "50"
             "autoResize"    "0"
@@ -106,7 +156,7 @@
         }
     }
 
-    
+
     "InGamePanel"
     {
         "ControlName"   "EditablePanel"
@@ -395,7 +445,7 @@
         "tall"          "480"
         "visible"       "0"
         "enabled"       "1"
-        "image"         "../console/title_war"
+        "image"         ""
         "scaleImage"    "1"
         
         if_halloween_0
@@ -430,15 +480,14 @@
         {
             "image"     "../console/title_summer_operation_2015"
         }
-        
     }
                     
     "TFLogoImage"
     {
         "ControlName"   "ImagePanel"
         "fieldName"     "TFLogoImage"
-        "xpos"          "15"
-        "ypos"          "0"
+        "xpos"          "9999"//15
+        "ypos"          "9999"//0
         "zpos"          "0"
         "wide"          "160"
         "tall"          "40"
@@ -451,8 +500,8 @@
     {
         "ControlName"   "ImagePanel"
         "fieldName"     "MannterfaceLogoImage"
-        "xpos"          "275"
-        "ypos"          "40"
+        "xpos"          "9999"//275
+        "ypos"          "9999"//40
         "zpos"          "0"
         "wide"          "311"
         "tall"          "98"
@@ -3040,19 +3089,19 @@
     {
         "ControlName"   "CExImageButton"
         "fieldName"     "TF2SettingsButton"
-        "xpos"          "c100"
-        "ypos"          "452"
+        "xpos"          "c120"
+        "ypos"          "450"
         "zpos"          "1"
-        "wide"          "18"
-        "tall"          "18"
+        "wide"          "120"
+        "tall"          "30"
         "autoResize"    "0"
         "pinCorner"     "3"
         "visible"       "1"
         "enabled"       "1"
         "tabPosition"   "0"
-        "labelText"     ""
+        "labelText"     "Advanced"
         "font"          "HudFontSmallBold"
-        "textAlignment" "west"
+        "textAlignment" "center"
         "textinsetx"    "35"
         "use_proportional_insets" "1"
         "dulltext"      "0"
@@ -3066,11 +3115,13 @@
         "sound_depressed"   "UI/buttonclick.wav"
         "sound_released"    "UI/buttonclickrelease.wav"
         
-        "border_default"    "MainMenuMiniButtonDefault"
-        "border_armed"      "MainMenuMiniButtonArmed"
+        "border_default"    "MainMenuButtonDefault"
+        "border_armed"      "MainMenuButtonArmed"
         "paintbackground"   "0"
         
-        "image_drawcolor"   "235 226 202 255"
+            "defaultFgColor_override" "46 43 42 255"
+            "armedFgColor_override" "235 226 202 255"
+            "depressedFgColor_override" "46 43 42 255"
         "SubImage"
         {
             "ControlName"   "ImagePanel"
@@ -3083,7 +3134,7 @@
             "visible"       "1"
             "enabled"       "1"
             "scaleImage"    "1"
-            "image"         "glyph_options"
+            "image"         ""
             "scaleImage"    "1"
         }               
     }             
@@ -3104,7 +3155,7 @@
         "tabPosition"   "0"
         "labelText"     "Settings"
         "font"          "HudFontSmallBold"
-        "textAlignment" "west"
+        "textAlignment" "center"
         "textinsetx"    "35"
         "use_proportional_insets" "1"
         "dulltext"      "0"
